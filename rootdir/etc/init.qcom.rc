@@ -375,20 +375,20 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
-service nqnfcinfo /system/vendor/bin/nqnfcinfo
+service vendor.nqnfcinfo /vendor/bin/nqnfcinfo
     class late_start
     group nfc
     user system
     oneshot
 
-service iop /system/vendor/bin/iop
+service vendor.iop /vendor/bin/iop
     class main
     user root
     group root
     disabled
     socket iop seqpacket 0666 root system
 
-service qcomsysd /system/vendor/bin/qcom-system-daemon
+service vendor.qcomsysd /vendor/bin/qcom-system-daemon
     class main
     user root
     group root diag oem_2901
@@ -400,11 +400,11 @@ on property:persist.vendor.qcomsysd.enabled=1
 on property:persist.vendor.qcomsysd.enabled=0
     stop qcomsysd
 
-service vendor.ssr_setup /system/vendor/bin/ssr_setup
+service vendor.ssr_setup /vendor/bin/ssr_setup
     oneshot
     disabled
 
-service vendor.ss_ramdump /system/vendor/bin/subsystem_ramdump
+service vendor.ss_ramdump /vendor/bin/subsystem_ramdump
     class main
     user system
     group system
@@ -482,19 +482,19 @@ on property:vendor.media.target_variant=*
     setprop ro.media.xml_variant.codecs ${vendor.media.target_variant}
     setprop ro.media.xml_variant.codecs_performance ${vendor.media.target_variant}
 
-service qcom-c_core-sh  /vendor/bin/init.qcom.class_core.sh
+service vendor.qcom-c_core-sh  /vendor/bin/init.qcom.class_core.sh
     class core
     user root
     oneshot
 
-service qcom-c_main-sh /vendor/bin/init.class_main.sh
+service vendor.qcom-c_main-sh /vendor/bin/init.class_main.sh
     class main
     user root
     group root system
     oneshot
 
 on property:vold.decrypt=trigger_restart_framework
-    start qcom-c_main-sh
+    start vendor.qcom-c_main-sh
     start wcnss-service
 
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
@@ -577,7 +577,7 @@ service iprenew_wigig0 /system/bin/dhcpcd -n
     disabled
     oneshot
 
-service wifi_ftmd /system/vendor/bin/wifi_ftmd
+service vendor.wifi_ftmd /system/vendor/bin/wifi_ftmd
     user system
     group system inet net_admin
     socket wififtmd_server dgram 0660 system system
@@ -587,7 +587,7 @@ service wifi_ftmd /system/vendor/bin/wifi_ftmd
 on property:vendor.wifi.ftmd.load=true
     insmod /system/lib/modules/pronto/pronto_wlan.ko con_mode=5
 
-service cnss-daemon /system/vendor/bin/cnss-daemon -n -l
+service vendor.cnss-daemon /vendor/bin/cnss-daemon -n -l
     class late_start
     user system
     group system inet net_admin wifi
@@ -607,24 +607,24 @@ service iprenew_bt-pan /system/bin/dhcpcd -n
     disabled
     oneshot
 
-service mlid /vendor/bin/mlid
+service vendor.mlid /vendor/bin/mlid
     class late_start
     user gps
     group gps
     socket mlid stream 0666 gps gps
 
-service loc_launcher /system/vendor/bin/loc_launcher
+service vendor.loc_launcher /vendor/bin/loc_launcher
     class late_start
     user gps
     group gps
 
-service qcom-sh /vendor/bin/init.qcom.sh
+service vendor.qcom-sh /vendor/bin/init.qcom.sh
     class late_start
     user root
     group root system radio
     oneshot
 
-service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
+service vendor.qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     class late_start
     user root
     group root system wakelock graphics
@@ -632,8 +632,8 @@ service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
     oneshot
 
 on property:sys.boot_completed=1
-    start qcom-post-boot
-    start qti-testscripts
+    start vendor.qcom-post-boot
+    start vendor.qti-testscripts
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
@@ -692,20 +692,20 @@ service charger /system/bin/charger
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
 
-service vendor.ssr_diag /system/vendor/bin/ssr_diag
+service vendor.ssr_diag /vendor/bin/ssr_diag
     class late_start
     user system
     group system
     disabled
 
-service diag_mdlog_start /system/vendor/bin/diag_mdlog
+service vendor.diag_mdlog_start /vendor/bin/diag_mdlog
     class late_start
     user shell
     group system oem_2901 sdcard_rw sdcard_r media_rw
     disabled
     oneshot
 
-service diag_mdlog_stop /system/vendor/bin/diag_mdlog -k
+service vendor.diag_mdlog_stop /vendor/bin/diag_mdlog -k
     class late_start
     user shell
     group system oem_2901 sdcard_rw sdcard_r media_rw
@@ -721,24 +721,24 @@ on property:persist.sys.qlogd=1
 on property:persist.sys.qlogd=0
     stop qlogd
 
-service vm_bms /vendor/bin/vm_bms
+service vendor.vm_bms /vendor/bin/vm_bms
     user root
     group root
     disabled
 
-service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
+service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
     class core
     user root
     group root
     disabled
 
-service vendor.msm_irqbal_lb /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance_little_big.conf
+service vendor.msm_irqbal_lb /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance_little_big.conf
     class core
     user root
     group root
     disabled
 
-service vendor.msm_irqbl_sdm630 /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance_sdm630.conf
+service vendor.msm_irqbl_sdm630 /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance_sdm630.conf
     class core
     user root
     group root
@@ -762,17 +762,17 @@ service vendor.LKCore-rel /vendor/bin/LKCore
 
 on charger
     setprop persist.sys.usb.config mass_storage
-    start qcom-post-boot
+    start vendor.qcom-post-boot
 
 #add poweroffhandler
-service poweroffhandler /system/vendor/bin/poweroffhandler
+service vendor.poweroffhandler /vendor/bin/poweroffhandler
     class core
     user media
     group graphics audio
     disabled
     oneshot
 
-service time_daemon /vendor/bin/time_daemon
+service vendor.time_daemon /vendor/bin/time_daemon
     class main
     user system
     group system
@@ -798,7 +798,7 @@ service vendor.hbtp /vendor/bin/hbtp_daemon
      capabilities SYS_NICE
      disabled
 
-service chre /vendor/bin/chre
+service vendor.chre /vendor/bin/chre
     class late_start
     user system
     group system
