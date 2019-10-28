@@ -968,7 +968,6 @@ vendor/lib64/vendor.qti.hardware.perf@2.0.so|16367f47fa4d632982438a45c255abb9e38
 vendor/bin/energy-awareness
 vendor/bin/msm_irqbalance
 vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/perf-profile1.conf
 vendor/etc/perf/perf-profile0.conf
 vendor/etc/perf/perf-profile5.conf
