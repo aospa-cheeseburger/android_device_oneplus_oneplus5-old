@@ -216,6 +216,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 TARGET_BOARD_PLATFORM := msm8998
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
+
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     audio \
