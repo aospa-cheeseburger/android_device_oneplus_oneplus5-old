@@ -972,13 +972,11 @@ vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/perf-profile1.conf
 vendor/etc/perf/perf-profile0.conf
 vendor/etc/perf/perf-profile5.conf
-vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/perf-profile3.conf
 vendor/etc/perf/perf-profile6.conf
 vendor/etc/perf/perf-profile2.conf
 vendor/etc/perf/perf-profile4.conf
 vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
 vendor/etc/powerhint.xml
 vendor/lib64/libadaptlaunch.so
 vendor/lib64/libappclassifier.so
