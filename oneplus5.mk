@@ -292,7 +292,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstdc++.vendor \
     libcamera2ndk_vendor \
-    vndk-sp
+    vndk-sp \
+    com.android.vndk.current.on_vendor
 
 PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
