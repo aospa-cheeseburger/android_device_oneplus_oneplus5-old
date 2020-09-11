@@ -317,7 +317,8 @@ PRODUCT_PACKAGES += \
 # libcamera2vndk: camera.msm8998
 PRODUCT_PACKAGES += \
     libstdc++.vendor \
-    libcamera2ndk_vendor
+    libcamera2ndk_vendor \
+    com.android.vndk.current.on_vendor
 
 # Wifi
 $(call inherit-product, vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
