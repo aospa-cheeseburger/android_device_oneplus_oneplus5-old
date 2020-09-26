@@ -99,6 +99,10 @@ PRODUCT_PACKAGES += \
     libjson \
     libsensorndkbridge
 
+# GPS / Location
+PRODUCT_PACKAGES += \
+    vendor.qti.gnss@3.0-service.xml
+
 # Healthd packages
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
