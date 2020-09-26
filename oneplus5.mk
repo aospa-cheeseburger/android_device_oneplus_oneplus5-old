@@ -100,6 +100,9 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge
 
 # GPS / Location
+PRODUCT_PACKAGES += \
+    vendor.qti.gnss@3.0-service.xml
+
 $(call inherit-product, hardware/qcom/gps/gps_vendor_board.mk)
 $(call inherit-product, hardware/qcom/gps/gps_vendor_product.mk)
 

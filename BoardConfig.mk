@@ -91,6 +91,7 @@ LOC_HIDL_VERSION := 3.0
 
 # Manifests
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/vendor.qti.gnss@3.0-service.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Partitions
