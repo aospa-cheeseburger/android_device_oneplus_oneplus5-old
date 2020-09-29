@@ -72,6 +72,18 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
+<<<<<<< HEAD
+=======
+USE_OPENGL_RENDERER := true
+
+OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
+
+# DRM plugins 64 bit compilation
+TARGET_ENABLE_MEDIADRM_64 := true
+
+# GPS
+LOC_HIDL_VERSION := 3.0
+>>>>>>> fb01334... oneplus5(t): Update and sort properties
 
 # Manifests
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
