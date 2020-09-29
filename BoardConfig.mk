@@ -18,6 +18,11 @@
 BOARD_VENDOR := oneplus
 COMMON_PATH := device/oneplus/oneplus5
 
+# HACKS
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+BUILD_BROKEN_DUP_RULES := true
+
 # Asserts
 TARGET_BOARD_INFO_FILE := $(COMMON_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := OnePlus5,oneplus5,cheeseburger,OnePlus5T,oneplus5t,dumpling
