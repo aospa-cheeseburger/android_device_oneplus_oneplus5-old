@@ -75,7 +75,7 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 
 # Manifests
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # GPS
 include hardware/qcom/gps/gps_vendor_board.mk

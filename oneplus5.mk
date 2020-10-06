@@ -188,6 +188,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     ueventd.qcom.rc \
+    init.oem.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.target.rc \
@@ -246,3 +247,10 @@ PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
+
+# Update this list with what each blob is actually for
+# libstdc++: camera.msm8998
+# libcamera2vndk: camera.msm8998
+PRODUCT_PACKAGES += \
+    libstdc++.vendor \
+    libcamera2ndk_vendor
