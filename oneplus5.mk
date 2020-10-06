@@ -127,6 +127,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
 
+# (Additional) Native libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # Net
 PRODUCT_PACKAGES += \
     libandroid_net
@@ -237,6 +241,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     ueventd.qcom.rc \
+    init.oem.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.target.rc \
@@ -296,6 +301,14 @@ PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
+
+# VNDK
+# Update this list with what each blob is actually for
+# libstdc++: camera.msm8998
+# libcamera2vndk: camera.msm8998
+PRODUCT_PACKAGES += \
+    libstdc++.vendor \
+    libcamera2ndk_vendor
 
 # Wifi
 $(call inherit-product, vendor/qcom/opensource/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
