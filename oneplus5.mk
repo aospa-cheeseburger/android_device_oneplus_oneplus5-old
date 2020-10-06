@@ -79,7 +79,7 @@ PRODUCT_PACKAGES += \
     libtinyxml
 
 PRODUCT_PACKAGES += \
-    vendor.display.config@2.0 \
+    vendor.display.config@1.9 \
     vendor.qti.hardware.display.allocator@1.0-service
 
 # DRM
@@ -150,6 +150,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
+
+# (Additional) Native libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Net
 PRODUCT_PACKAGES += \
@@ -262,6 +266,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     ueventd.qcom.rc \
+    init.oem.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.target.rc \
@@ -314,3 +319,11 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, build/target/product/verity.mk)
 
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
+
+# VNDK
+# Update this list with what each blob is actually for
+# libstdc++: camera.msm8998
+# libcamera2vndk: camera.msm8998
+PRODUCT_PACKAGES += \
+    libstdc++.vendor \
+    libcamera2ndk_vendor
