@@ -135,6 +135,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/oneplus5
 
+# (Additional) Native libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
@@ -243,7 +247,9 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sh \
     init.qcom.usb.rc \
-    init.qcom.usb.sh
+    init.qcom.usb.sh \
+    init.oem.rc \
+    init.oem.debug.rc
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -265,7 +271,10 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-service
 
 # VNDK
+# Update this list with what each blob is actually for
+# libstdc++: camera.msm8998
 PRODUCT_PACKAGES += \
+    libstdc++.vendor \
     vndk-sp
 
 PRODUCT_TARGET_VNDK_VERSION := 29

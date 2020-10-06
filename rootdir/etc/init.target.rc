@@ -155,11 +155,15 @@ service vendor.per_proxy /vendor/bin/pm-proxy
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
 
+# VENDOR_EDIT
+# Bug: Device spent 10 seconds to waiting modem subsystem shutdown
+# Solution: Fix the bug to stop cnss-daemon when device is shutting down
 on property:sys.shutdown.requested=*
+    stop cnss-daemon
     stop vendor.per_proxy
 
 on charger
-    start vendor.hvdcp_opti
+#    start vendor.hvdcp_opti
     setprop sys.usb.configfs 1
 
 #on post-fs
@@ -220,10 +224,10 @@ service thermal-engine /system/vendor/bin/thermal-engine
 #    oneshot
 #
 
-#service adsprpcd /system/vendor/bin/adsprpcd
-#   class main
-#   user media
-#   group media
+service adsprpcd /system/vendor/bin/adsprpcd
+   class main
+   user media
+   group media
 
 service hbtp /system/vendor/bin/hbtp_daemon
     class main
@@ -400,10 +404,12 @@ on property:init.svc.zygote=restarting
 #    user system
 #    group drmrpc
 #
+
 #service adsprpcd /system/vendor/bin/adsprpcd
 #   class main
 #   user media
 #   group media
+
 #
 ##Start picture quality tuning service
 #service vqttoolservice /system/bin/vqttoolservice
@@ -427,12 +433,18 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
     class main
     user root
     group system wakelock
+    disabled
 
 service vendor.sensors.qti /vendor/bin/sensors.qti
     class core
     user system
     group system
     disabled
+
+service dashd /vendor/xbin/dashd
+     class core
+     critical
+     group root system
 
 service qvrd /system/bin/qvrservice
     class late_start
