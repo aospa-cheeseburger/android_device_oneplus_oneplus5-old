@@ -60,7 +60,6 @@ on fs
 
 on post-fs
     start vendor.qseecomd
-    wait_for_prop vendor.sys.listeners.registered true
     write /dev/ipa 1
 
 on post-fs-data
@@ -187,15 +186,6 @@ on charger
 #on property:sys.boot_completed=1
 #    start qrngp
 #
-service vendor.qseecomd /vendor/bin/qseecomd
-   class core
-   user root
-   group root
-
-service spdaemon /vendor/bin/spdaemon
-   class core
-   user system
-   group system
 
 #service qosmgrd /system/bin/qosmgr /system/etc/qosmgr_rules.xml
 #   user system
@@ -224,12 +214,6 @@ service thermal-engine /system/vendor/bin/thermal-engine
 #   class main
 #   user media
 #   group media
-
-service hbtp /system/vendor/bin/hbtp_daemon
-    class main
-    user system
-    group system
-    disabled
 
 service audiod /system/vendor/bin/audiod
    class late_start
@@ -353,15 +337,6 @@ service vendor.pd_mapper /vendor/bin/pd-mapper
 #   user root
 #   group gps system oem_2901 diag log inet net_raw
 #   disabled
-
-on property:vold.decrypt=trigger_restart_framework
-   start cnss_diag
-
-service cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
-   class main
-   user system
-   group system wifi inet sdcard_rw media_rw diag
-   oneshot
 
 service ppd /vendor/bin/mm-pp-dpps
     class late_start

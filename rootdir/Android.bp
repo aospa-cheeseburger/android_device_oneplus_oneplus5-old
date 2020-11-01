@@ -32,28 +32,9 @@ prebuilt_etc {
     vendor: true,
 }
 
-prebuilt_etc {
-    name: "init.qcom.factory.rc",
-    src: "etc/init.qcom.factory.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
 sh_binary {
     name: "init.class_main.sh",
     src: "bin/init.class_main.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.crda.sh",
-    src: "bin/init.crda.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.mdm.sh",
-    src: "bin/init.mdm.sh",
     vendor: true,
 }
 
@@ -70,32 +51,14 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qcom.coex.sh",
-    src: "bin/init.qcom.coex.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "bin/init.qcom.early_boot.sh",
     vendor: true,
 }
 
 sh_binary {
-    name: "init.qcom.efs.sync.sh",
-    src: "bin/init.qcom.efs.sync.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.qcom.post_boot.sh",
     src: "bin/init.qcom.post_boot.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.sdio.sh",
-    src: "bin/init.qcom.sdio.sh",
     vendor: true,
 }
 
