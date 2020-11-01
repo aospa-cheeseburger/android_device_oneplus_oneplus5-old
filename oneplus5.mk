@@ -190,25 +190,16 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
-    init.qcom.sh \
     init.target.rc \
-    ueventd.qcom.rc \
+    init.recovery.qcom.rc \
     init.class_main.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
-    init.qcom.sdio.sh \
-    init.qti.can.sh \
-    init.crda.sh \
-    init.qcom.coex.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.sensors.sh \
-    init.qti.qseecomd.sh \
-    init.mdm.sh \
-    init.qcom.crashdata.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
     init.qcom.usb.rc \
-    init.qcom.usb.sh
+    init.qcom.usb.sh \
+    qca6234-service.sh
 
 # Sensors
 PRODUCT_PACKAGES += \
