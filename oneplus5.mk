@@ -329,9 +329,8 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
 # Verity
-$(call inherit-product, build/target/product/verity.mk)
-
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
+#$(call inherit-product, build/target/product/verity.mk)
+#PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
 
 # VNDK
 # Update this list with what each blob is actually for
