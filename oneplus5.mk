@@ -250,12 +250,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml
 
 # Verity
-$(call inherit-product, build/target/product/verity.mk)
+#$(call inherit-product, build/target/product/verity.mk)
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.verified_boot.xml:system/etc/permissions/android.software.verified_boot.xml
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/android.software.verified_boot.xml:system/etc/permissions/android.software.verified_boot.xml
 
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
+#PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
 
 # VNDK
 PRODUCT_PACKAGES += \
