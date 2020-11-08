@@ -53,8 +53,8 @@ TARGET_HW_DISK_ENCRYPTION := true
 # Kernel
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=2048 androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3 loop.max_part=7
-BOARD_KERNEL_CMDLINE += ro root=/dev/sde21 rootwait skip_initramfs init=/init
-BOARD_KERNEL_CMDLINE += dm=\"system none ro,0 1 android-verity /dev/sde21ß\"
+#BOARD_KERNEL_CMDLINE += ro root=/dev/sde21 rootwait skip_initramfs init=/init
+#BOARD_KERNEL_CMDLINE += dm=\"system none ro,0 1 android-verity /dev/sde21ß\"
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -113,7 +113,7 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Enable System As Root even for non-A/B from P onwards
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+#BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
