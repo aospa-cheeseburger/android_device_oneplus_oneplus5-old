@@ -301,5 +301,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Verity
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.verified_boot.xml:system/etc/permissions/android.software.verified_boot.xml
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/android.software.verified_boot.xml:system/etc/permissions/android.software.verified_boot.xml
