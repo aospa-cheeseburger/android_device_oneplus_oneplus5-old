@@ -122,6 +122,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
 
+# Factory Reset Protection
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.frp.pst=/dev/block/bootdevice/by-name/config
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
@@ -161,7 +165,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.oneplus.rc
+    init.oneplus.rc \
+    ueventd.oneplus.rc
 
 # IRQ
 PRODUCT_COPY_FILES += \
