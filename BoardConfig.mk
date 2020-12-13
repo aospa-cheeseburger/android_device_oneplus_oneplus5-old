@@ -71,10 +71,16 @@ BOARD_SUPPORTS_OPENSOURCE_STHAL := false
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
+OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
-# Manifests
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(COMMON_PATH)/oneplus_vendor_framework_compatibility_matrix.xml \
+    vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml
+
+DEVICE_MANIFEST_FILE := \
+    $(COMMON_PATH)/manifest.xml \
+    $(COMMON_PATH)/oneplus_manifest.xml
 
 # GPS
 include hardware/qcom/gps/gps_vendor_board.mk

@@ -1,0 +1,207 @@
+# Copyright (C) 2020 Paranoid Android
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+on charger
+    start dashd
+
+on init
+    # DASH
+    chown system system /dev/dash
+    chmod 0664 /dev/dash
+
+on post-fs
+    # Camera
+    mkdir /mnt/vendor/persist/camera
+    chown system system /mnt/vendor/persist/camera
+    mkdir /mnt/vendor/persist/dual_camera_calibration 0777 system system
+
+    # Haptics
+    chown system system /sys/class/timed_output/vibrator/vmax_mv
+    chown system system /sys/class/timed_output/vibrator/wf_s0
+    chown system system /sys/class/timed_output/vibrator/wf_s1
+    chown system system /sys/class/timed_output/vibrator/wf_s2
+    chown system system /sys/class/timed_output/vibrator/wf_s3
+    chown system system /sys/class/timed_output/vibrator/wf_s4
+    chown system system /sys/class/timed_output/vibrator/wf_s5
+    chown system system /sys/class/timed_output/vibrator/wf_s6
+    chown system system /sys/class/timed_output/vibrator/wf_s7
+    chown system system /sys/class/timed_output/vibrator/wf_update
+    chown system system /sys/class/timed_output/vibrator/wf_rep
+    chown system system /sys/class/timed_output/vibrator/wf_s_rep
+    chown system system /sys/devices/soc/c179000.i2c/i2c-5/5-0020/tp_grip_ctrl
+
+    chown system system /sys/class/leds/vibrator/vmax_mv
+    chmod 660 /sys/class/leds/vibrator/vmax_mv
+    chmod 0664 /persist/spkr_calibration.bin
+    chown system system /sys/class/leds/vibrator/test_mode
+    chmod 660 /sys/class/leds/vibrator/test_mode
+    chown system system /sys/class/leds/vibrator/trigger
+    chown system system /sys/class/leds/vibrator/activate
+    chown system system /sys/class/leds/vibrator/brightness
+    chown system system /sys/class/leds/vibrator/duration
+    chown system system /sys/class/leds/vibrator/state
+    chown system system /persist/sensors/registry/registry/tmd3725_platform.rgb.rfac_cal
+    chmod 660 /persist/sensors/registry/registry/tmd3725_platform.rgb.rfac_cal
+    chown system system /persist/sensors/registry/registry/tmd3725_platform.als.afac_cal
+    chmod 660 /persist/sensors/registry/registry/tmd3725_platform.als.afac_cal
+
+    # Power/Thermal
+    chown system system /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+    chown system system /sys/class/power_supply/battery/connect_disable
+    chown system system /sys/class/power_supply/bms/set_allow_read_extern_fg_iic
+
+on early-boot
+
+    # Sensors
+    chown system system /persist/sensors
+    chown system system /persist/sensors/registry
+    chown system system /persist/sensors/registry/registry
+    chown system system /persist/sensors/registry/registry/sensors_registry
+    chown system system /persist/sensors/sensors_settings
+    chown system system /persist/sensors/registry/config
+    chmod 0664 /persist/sensors/sensors_settings
+    chown system system /mnt/vendor/persist/sensors
+    chown system system /mnt/vendor/persist/sensors/sns.reg
+    chown system system /mnt/vendor/persist/sensors/sensors_list.txt
+    chown system system /mnt/vendor/persist/sensors/registry
+    chown system system /mnt/vendor/persist/sensors/registry/registry
+    chown system system /mnt/vendor/persist/sensors/registry/registry/sensors_registry
+    chown system system /mnt/vendor/persist/sensors/sensors_settings
+    chown system system /mnt/vendor/persist/sensors/registry/sns_reg_config
+    chown system system /mnt/vendor/persist/sensors/registry/sns_reg_version
+    chown system system /mnt/vendor/persist/sensors/registry/config
+    chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
+
+on boot
+
+    # Fingerprint
+    chmod 0664 /sys/devices/soc/soc:fpc_fpc1020/irq
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/irq
+    chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/report_home
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/report_home
+    chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/report_key
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/report_key
+    chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/update_info
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/update_info
+    chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/screen_state
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/screen_state
+    chmod 0660 /sys/devices/soc/soc:fingerprint_detect/sensor_version
+    chown system system /sys/devices/soc/soc:fingerprint_detect/sensor_version
+    chmod 0660 /sys/devices/soc/soc:fpc_fpc1020/hw_reset
+    chown system system /sys/devices/soc/soc:fpc_fpc1020/hw_reset
+    chmod 0666 /dev/qseecom
+    chmod 0666 /dev/goodix_fp
+
+    # FOTA
+    mkdir /data/fota 0771
+    chown system system /data/fota
+
+    # Gestures
+    chown system system /proc/touchpanel/gesture_enable
+    chown system system /proc/touchpanel/gesture_switch
+    chown system system /proc/touchpanel/key_switch
+    chown system system /proc/touchpanel/key_disable
+    chown system system /proc/touchpanel/tpedge_limit_enable
+
+    # Hostpad
+    mkdir /data/hostapd 0770 system wifi
+
+    # Media
+    chown system system /sys/module/proc/parameters/dbg_buf
+    write /sys/module/oneplus_fastchg/parameters/mcu_reset 1
+
+    # RGB Light
+    chown system system /sys/class/leds/red/pause_lo
+    chown system system /sys/class/leds/blue/pause_lo
+    chown system system /sys/class/leds/green/pause_lo
+    chown system system /sys/class/leds/red/pause_hi
+    chown system system /sys/class/leds/blue/pause_hi
+    chown system system /sys/class/leds/green/pause_hi
+    chown system system /sys/class/leds/red/blink
+    chown system system /sys/class/leds/blue/blink
+    chown system system /sys/class/leds/green/blink
+    chown system system /sys/class/leds/red/ramp_step_ms
+    chown system system /sys/class/leds/blue/ramp_step_ms
+    chown system system /sys/class/leds/green/ramp_step_ms
+    chown system system /sys/class/leds/red/duty_pcts
+    chown system system /sys/class/leds/blue/duty_pcts
+    chown system system /sys/class/leds/green/duty_pcts
+    chmod 660 /sys/class/leds/red/ramp_step_ms
+    chmod 660 /sys/class/leds/green/ramp_step_ms
+    chmod 660 /sys/class/leds/blue/ramp_step_ms
+    chmod 660 /sys/class/leds/red/duty_pcts
+    chmod 660 /sys/class/leds/green/duty_pcts
+    chmod 660 /sys/class/leds/blue/duty_pcts
+    chmod 666 /sys/class/leds/red/brightness
+    chmod 666 /sys/class/leds/green/brightness
+    chmod 666 /sys/class/leds/blue/brightness
+
+    # Sensors
+    mkdir /data/vendor/sensors
+    chown system system /data/vendor/sensors
+    chown system system /mnt/vendor/persist/sensors/sns.reg
+
+    # Torch
+    chown system system /sys/class/leds/led:torch_0/brightness
+    chmod 666 /sys/class/leds/led:torch_0/brightness
+    chown system system /sys/class/leds/led:torch_1/brightness
+    chmod 666 /sys/class/leds/led:torch_1/brightness
+    chown system system /sys/class/leds/led:switch_0/brightness
+    chmod 666 /sys/class/leds/led:switch_0/brightness
+
+    # TP Firmware
+    write /sys/bus/i2c/devices/5-0020/tp_fw_update 0
+
+
+# DASH
+# Fix ADSP issue when booted with DASH connected.
+on property:sys.boot_completed=1
+    write /sys/module/smb_lib/parameters/sys_boot_complete 1
+
+service dashd /vendor/bin/dashd
+    class core
+    critical
+    seclabel u:r:dashd:s0
+    group root system
+
+# OTG Support
+on property:persist.sys.oem.otg_support=true
+    write /sys/class/power_supply/usb/otg_switch 1
+on property:persist.sys.oem.otg_support=false
+    write /sys/class/power_supply/usb/otg_switch 0
+
+# USB
+on charger
+    mkdir /dev/usb-ffs 0770 shell shell
+    mkdir /dev/usb-ffs/adb 0770 shell shell
+    mount configfs none /config
+    mkdir /config/usb_gadget/g1 0770 shell shell
+    mkdir /config/usb_gadget/g1/strings/0x409 0770 shell shell
+    write /config/usb_gadget/g1/bcdUSB 0x0200
+    write /config/usb_gadget/g1/os_desc/use 1
+    write /config/usb_gadget/g1/strings/0x409/serialnumber ${ro.serialno}
+    mkdir /config/usb_gadget/g1/functions/ffs.adb
+    mkdir /config/usb_gadget/g1/configs/b.1 0770 shell shell
+    mkdir /config/usb_gadget/g1/configs/b.1/strings/0x409 0770 shell shell
+    write /config/usb_gadget/g1/os_desc/b_vendor_code 0x1
+    write /config/usb_gadget/g1/os_desc/qw_sign "MSFT100"
+    symlink /config/usb_gadget/g1/configs/b.1 /config/usb_gadget/g1/os_desc/b.1
+    mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
+    setprop sys.usb.config mass_storage
+    setprop sys.usb.configfs 1
+
+# Bug: Device spent 10 seconds to waiting modem subsystem shutdown
+# Solution: Fix the bug to stop cnss-daemon when device is shutting down
+on property:sys.shutdown.requested=*
+    stop cnss-daemon

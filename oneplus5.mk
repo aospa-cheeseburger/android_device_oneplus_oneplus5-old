@@ -111,6 +111,9 @@ PRODUCT_PACKAGES += \
     libqservice \
     libtinyxml
 
+-include hardware/qcom/display/config/display-board.mk
+-include hardware/qcom/display/config/display-product.mk
+
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpmhalservice.enable=1
@@ -157,7 +160,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.oneplus.rc
 
 # IRQ
 PRODUCT_COPY_FILES += \
