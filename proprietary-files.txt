@@ -827,6 +827,79 @@ vendor/lib/libhbtpdsp.so
 vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
 vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
 
+# IMS - LA.UM.9.11.r1-02200-NICOBAR.0
+vendor/bin/ims_rtp_daemon
+vendor/bin/imsdatadaemon
+vendor/bin/imsqmidaemon
+vendor/bin/imsrcsd
+vendor/etc/init/dataadpl.rc
+vendor/etc/init/dataqti.rc
+vendor/etc/init/ims_rtp_daemon.rc
+vendor/etc/init/imsdatadaemon.rc
+vendor/etc/init/imsqmidaemon.rc
+vendor/etc/init/imsrcsd.rc
+vendor/etc/seccomp_policy/imsrtp.policy
+vendor/lib/com.qualcomm.qti.imscmservice@1.0.so
+vendor/lib/com.qualcomm.qti.imscmservice@2.0.so
+vendor/lib/com.qualcomm.qti.imscmservice@2.1.so
+vendor/lib/com.qualcomm.qti.imscmservice@2.2.so
+vendor/lib/com.qualcomm.qti.uceservice@2.0.so
+vendor/lib/com.qualcomm.qti.uceservice@2.1.so
+vendor/lib/com.qualcomm.qti.uceservice@2.2.so
+vendor/lib/lib-imscmservice.so
+vendor/lib/lib-imsdpl.so
+vendor/lib/lib-imsqimf.so
+vendor/lib/lib-imsrcs-v2.so
+vendor/lib/lib-imsrcsbaseimpl.so
+vendor/lib/lib-imsvtcore.so
+vendor/lib/lib-imsxml.so
+vendor/lib/lib-rcsconfig.so
+vendor/lib/lib-rtpcommon.so
+vendor/lib/lib-rtpcore.so
+vendor/lib/lib-rtpsl.so
+vendor/lib/lib-siputility.so
+vendor/lib/lib-uceservice.so
+vendor/lib/librcc.so
+vendor/lib/vendor.qti.ims.callcapability@1.0.so
+vendor/lib/vendor.qti.ims.callinfo@1.0.so
+vendor/lib/vendor.qti.ims.factory@1.0.so
+vendor/lib/vendor.qti.ims.rcsconfig@1.0.so
+vendor/lib/vendor.qti.ims.rcsconfig@1.1.so
+vendor/lib/vendor.qti.ims.rcsconfig@2.0.so
+vendor/lib/vendor.qti.ims.rcsconfig@2.1.so
+vendor/lib/vendor.qti.imsrtpservice@3.0.so
+vendor/lib/vendor.qti.imsrtpservice@3.0-service-Impl.so
+vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so
+vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so
+vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so
+vendor/lib64/com.qualcomm.qti.imscmservice@2.2.so
+vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
+vendor/lib64/com.qualcomm.qti.uceservice@2.1.so
+vendor/lib64/com.qualcomm.qti.uceservice@2.2.so
+vendor/lib64/lib-imscmservice.so
+vendor/lib64/lib-imsdpl.so
+vendor/lib64/lib-imsqimf.so
+vendor/lib64/lib-imsrcs-v2.so
+vendor/lib64/lib-imsrcsbaseimpl.so
+vendor/lib64/lib-imsvtcore.so
+vendor/lib64/lib-imsxml.so
+vendor/lib64/lib-rcsconfig.so
+vendor/lib64/lib-rtpcommon.so
+vendor/lib64/lib-rtpcore.so
+vendor/lib64/lib-rtpsl.so
+vendor/lib64/lib-siputility.so
+vendor/lib64/lib-uceservice.so
+vendor/lib64/librcc.so
+vendor/lib64/vendor.qti.ims.callcapability@1.0.so
+vendor/lib64/vendor.qti.ims.callinfo@1.0.so
+vendor/lib64/vendor.qti.ims.factory@1.0.so
+vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
+vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
+vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
+vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so
+vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
+
 # Keystore (OOS)
 vendor/lib64/hw/keystore.msm8998.so
 vendor/lib/hw/keystore.msm8998.so
@@ -841,31 +914,16 @@ vendor/lib/libgcs.so|ccb6ac9c27021cf4f2ec09994742c38b700c2583
 vendor/lib/libsmwrapper.so|7f7bd7045ced84928ec46b457ec5f21d5228ea3a
 
 # Media - LA.UM.9.11.r1-02200-NICOBAR.0
-vendor/bin/vppservice
-vendor/etc/configstore/vpp.configstore.xml
-vendor/etc/init/vppservice.rc
 vendor/lib64/libI420colorconvert.so
-vendor/lib64/libOmxVpp.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libswvdec.so
-vendor/lib64/libvppclient.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib/libFileMux_proprietary.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libOmxDsdDec.so
 vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libOmxVpp.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libswvdec.so
-vendor/lib/libvppclient.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib/vendor.qti.hardware.vpp@1.2.so
 
 # Media codecs - LA.UM.9.11.r1-02200-NICOBAR.0
 vendor/lib64/libAlacSwDec.so
@@ -928,7 +986,6 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/libskewknob.so
-vendor/lib64/vendor.qti.hardware.perf@1.0.so
 vendor/lib64/vendor.qti.hardware.perf@2.0.so
 vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
@@ -936,7 +993,6 @@ vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
 vendor/lib/libqti-utils.so
-vendor/lib/vendor.qti.hardware.perf@1.0.so
 vendor/lib/vendor.qti.hardware.perf@2.0.so
 
 # Performance (IOP) - OP6 OOS
@@ -944,7 +1000,7 @@ vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib64/libqti-iopd.so
 vendor/lib64/libqti-iopd-client.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.s
+vendor/lib64/vendor.qti.hardware.iop@2.0.so
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
 vendor/lib/libqti-iopd.so
 vendor/lib/libqti-iopd-client.so
@@ -1289,9 +1345,6 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
-
-# Wi-Fi - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/bin/cnss-daemon|d7118e205124e456e6d5ff01efeb8ad931001eb3
 
 # WFD - LA.UM.9.11.r1-02200-NICOBAR.0
 vendor/bin/wfdhdcphalservice
