@@ -192,6 +192,7 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefright_softomx \
     libstagefrighthw \
+    disable_configstore \
     vendor.qti.hardware.capabilityconfigstore@1.0 \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
