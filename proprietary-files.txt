@@ -738,6 +738,12 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
 # Graphics - from LA.UM.8.2.r1-06700-sdm660.0
+etc/permissions/com.qti.snapdragon.sdk.display.xml
+-framework/com.qti.snapdragon.sdk.display.jar
+lib/libsdm-disp-apis.so
+lib64/libsdm-disp-apis.so
+product/lib/libsd_sdk_display.so
+product/lib64/libsd_sdk_display.so
 vendor/lib/egl/eglSubDriverAndroid.so|c6c5e68ce670aeab637d29cfd3f7dba45e05e76c
 vendor/lib/egl/libEGL_adreno.so|643998f415d1218737764236ff0e3d7ea292c9c6
 vendor/lib/egl/libGLESv1_CM_adreno.so|35180cd115c1d9dcc7ed33a4add281a365d8ec9c
