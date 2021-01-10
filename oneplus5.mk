@@ -104,7 +104,8 @@ PRODUCT_PACKAGES += \
 
 # Encryption
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee \
+    libspl
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -205,7 +206,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefright_softomx \
     libstagefrighthw \
-    disable_configstore \
     vendor.qti.hardware.capabilityconfigstore@1.0 \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 

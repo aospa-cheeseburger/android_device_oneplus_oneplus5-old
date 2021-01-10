@@ -85,7 +85,7 @@ vendor/lib64/soundfx/libqcvirt.so|7b11552f1100a6b6146865ceba853d331946b913
 # Audio Firmware (OOS)
 vendor/etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
 
-# Bluetooth
+# Bluetooth - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
@@ -458,7 +458,7 @@ vendor/lib/libmmcamera_isp_sce40.so
 vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
-# CNE - LA.UM.9.11.r1-02200-NICOBAR.0
+# CNE - LA.UM.9.11.r1-02600-NICOBAR.0
 -vendor/app/CACertService/CACertService.apk;PRESIGNED
 -vendor/app/CneApp/CneApp.apk;PRESIGNED
 -vendor/app/IWlanService/IWlanService.apk;PRESIGNED
@@ -491,8 +491,6 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
-vendor/etc/cne/profileSlm.xml
-vendor/etc/cne/slm.conf
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/etc/init/mutualex.rc
@@ -515,6 +513,7 @@ vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so
 vendor/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so
 vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib/vendor.qti.hardware.data.qmi@1.0.so
+vendor/lib/vendor.qti.hardware.mwqemadapter@1.0.so
 vendor/lib/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib/vendor.qti.latency@2.0.so
 vendor/lib64/libcacertclient.so
@@ -536,17 +535,18 @@ vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so
 vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
+vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
-# Config Store - LA.UM.9.11.r1-02200-NICOBAR.0
+# Config Store - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/capabilityconfigstoretest
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Data - LA.UM.9.11.r1-02200-NICOBAR.0
+# Data - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
 vendor/bin/embmsslServer
@@ -590,6 +590,8 @@ vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.0.so
+vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so
+vendor/lib64/vendor.qti.hardware.embmssl@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
 # Data - OOS
@@ -604,7 +606,7 @@ vendor/firmware/ipa_fws.mdt
 # Dash (OOS)
 vendor/xbin/dashd
 
-# Diag - LA.UM.9.11.r1-02200-NICOBAR.0
+# Diag - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/PktRspTest
 vendor/bin/diag_callback_sample
 vendor/bin/diag_dci_sample
@@ -622,7 +624,7 @@ vendor/lib64/libdiagjni.so
 vendor/etc/qdcm_calib_data_samsung_s6e3fa5_1080p_cmd_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_samsung_s6e3fa6_1080p_cmd_mode_dsi_panel.xml
 
-# DPM - LA.UM.9.11.r1-02200-NICOBAR.0
+# DPM - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
 vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
@@ -650,7 +652,7 @@ vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/hw/gatekeeper.msm8998.so
 vendor/lib64/hw/gatekeeper.msm8998.so
 
-# GPS - LA.UM.9.11.r1-02200-NICOBAR.0
+# GPS - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/garden_app
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
@@ -854,7 +856,7 @@ vendor/lib/libhbtpdsp.so
 vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
 vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
 
-# IMS - LA.UM.9.11.r1-02200-NICOBAR.0
+# IMS - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
@@ -927,20 +929,16 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 
-# Keystore (OOS)
-vendor/lib64/hw/keystore.msm8998.so
-vendor/lib/hw/keystore.msm8998.so
+# Listen - OOS
+vendor/lib/hw/sound_trigger.primary.msm8998.so
+vendor/lib/libadpcmdec.so
+vendor/lib/libgcs-calwrapper.so
+vendor/lib/libgcs-ipc.so
+vendor/lib/libgcs-osal.so
+vendor/lib/libgcs.so
+vendor/lib/libsmwrapper.so
 
-# Listen - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/lib/hw/sound_trigger.primary.sdm660.so:vendor/lib/hw/sound_trigger.primary.msm8998.so|336e4af06f2ddd74bf318bae8ce21388c7f90ac6
-vendor/lib/libadpcmdec.so|8c72aa1812bfa749f266020366894c8a3873d99c
-vendor/lib/libgcs-calwrapper.so|cbf3dbe43161b68adfaf48a9da4e7fedd7b02f5a
-vendor/lib/libgcs-ipc.so|215c2dded9ccd0fc015db2d7008824e332886d2b
-vendor/lib/libgcs-osal.so|5f0c6798dbeb9c806706b0cf217440662452364c
-vendor/lib/libgcs.so|ccb6ac9c27021cf4f2ec09994742c38b700c2583
-vendor/lib/libsmwrapper.so|7f7bd7045ced84928ec46b457ec5f21d5228ea3a
-
-# Media - LA.UM.9.11.r1-02200-NICOBAR.0
+# Media - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/lib64/libI420colorconvert.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libswvdec.so
@@ -952,7 +950,7 @@ vendor/lib/libdsd2pcm.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libswvdec.so
 
-# Media codecs - LA.UM.9.11.r1-02200-NICOBAR.0
+# Media codecs - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libFlacSwDec.so
@@ -991,61 +989,67 @@ vendor/lib/libOmxWmaDec.so
 # NFC (OOS)
 vendor/lib/libpn553_fw.so
 
-# Peripheral Manager - LA.UM.9.11.r1-02200-NICOBAR.0
+# Peripheral Manager - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
-# Performance - OP6 OOS
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
+# Performance - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
+vendor/bin/msm_irqbalance
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
+vendor/etc/lm/AdaptLaunchFeature.xml
+vendor/etc/lm/AppClassifierFeature.xml
+vendor/etc/lm/GameOptimizationFeature.xml
+vendor/etc/msm_irqbalance.conf
+vendor/etc/perf/commonresourceconfigs.xml
+vendor/etc/perf/perfboostsconfig.xml
+vendor/etc/perf/perfconfigstore.xml
+vendor/etc/perf/targetconfig.xml
+vendor/etc/perf/targetresourceconfigs.xml
+vendor/lib/libperfconfig.so
+vendor/lib/libperfgluelayer.so
+vendor/lib/libperfioctl.so
+vendor/lib/libqti-iopd.so
+vendor/lib/libqti-iopd-client.so
+vendor/lib/libqti-perfd.so
+vendor/lib/libqti-perfd-client.so
+vendor/lib/libqti-util.so
+vendor/lib/libqti-utils.so
+vendor/lib/libskewknob.so
+vendor/lib/vendor.qti.hardware.iop@1.0.so
+vendor/lib/vendor.qti.hardware.iop@2.0.so
+vendor/lib/vendor.qti.hardware.perf@2.0.so
+vendor/lib/vendor.qti.hardware.perf@2.1.so
+vendor/lib/vendor.qti.hardware.perf@2.2.so
 vendor/lib64/libadaptlaunch.so
 vendor/lib64/libappclassifier.so
 vendor/lib64/libgameoptfeature.so
 vendor/lib64/liblearningmodule.so
-vendor/lib64/libmeters-ns.so
 vendor/lib64/libmeters.so
+vendor/lib64/libmeters-ns.so
 vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
+vendor/lib64/libperfioctl.so
+vendor/lib64/libqti-iopd.so
+vendor/lib64/libqti-iopd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
+vendor/lib64/libreffeature.so
 vendor/lib64/libskewknob.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib/vendor.qti.hardware.perf@2.0.so
-
-# Performance (IOP) - OP6 OOS
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/libqti-iopd.so
-vendor/lib64/libqti-iopd-client.so
 vendor/lib64/vendor.qti.hardware.iop@1.0.so
 vendor/lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib/libqti-iopd.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
+vendor/lib64/vendor.qti.hardware.perf@2.0.so
+vendor/lib64/vendor.qti.hardware.perf@2.1.so
+vendor/lib64/vendor.qti.hardware.perf@2.2.so
 
 # Performance - (Stock OOS)
 vendor/bin/energy-awareness
-vendor/bin/msm_irqbalance
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perf-profile1.conf
-vendor/etc/perf/perf-profile0.conf
-vendor/etc/perf/perf-profile5.conf
-vendor/etc/perf/perf-profile3.conf
-vendor/etc/perf/perf-profile6.conf
-vendor/etc/perf/perf-profile2.conf
-vendor/etc/perf/perf-profile4.conf
-vendor/etc/perf/targetconfig.xml
 vendor/etc/powerhint.xml
 
 # Postprocessing - from LA.UM.8.2.r1-06700-sdm660.0
@@ -1058,7 +1062,7 @@ vendor/lib64/vendor.display.color@1.1.so|d2dfc3fff6aaf7989110ebe05af154186e53501
 vendor/lib64/vendor.display.color@1.2.so|7b967425caa1205e331484e1e1484ac3bd355067
 vendor/lib64/vendor.display.postproc@1.0.so|c9c96ff50b6ff8989fac9fdf35d282a996ea477a
 
-# Power-off alarm - LA.UM.9.11.r1-02200-NICOBAR.0
+# Power-off alarm - LA.UM.9.11.r1-02600-NICOBAR.0
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
@@ -1066,7 +1070,7 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# QMI - LA.UM.9.11.r1-02200-NICOBAR.0
+# QMI - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance
 vendor/bin/irsc_util
 vendor/bin/qrtr-cfg
@@ -1108,7 +1112,7 @@ vendor/lib64/libqsocket.so
 vendor/lib64/libsmemlog.so
 vendor/lib64/libsystem_health_mon.so
 
-# QCRIL - LA.UM.9.11.r1-02200-NICOBAR.0
+# QCRIL - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/qcrild
 vendor/bin/qtigetprop
 vendor/bin/qtisetprop
@@ -1204,7 +1208,7 @@ vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
 
-# QTEE - LA.UM.9.11.r1-02200-NICOBAR.0
+# QTEE - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
@@ -1218,7 +1222,7 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# QSEECOM - LA.UM.9.11.r1-02200-NICOBAR.0
+# QSEECOM - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
 vendor/bin/qseecom_sample_client
@@ -1295,7 +1299,7 @@ vendor/lib/libsubsystem_control.so|fe08da9f6a0e73a97231055c4ca8279a68432476
 vendor/lib64/libSubSystemShutdown.so|c934b2df57be86fdfb9bdf2046f9289af5e7a62c
 vendor/lib64/libsubsystem_control.so|b2e8c7eb9d999137ae99ea38f85d7dac59c6dcc2
 
-# SecureMSM (GPQESE) - LA.UM.9.11.r1-02200-NICOBAR.0
+# SecureMSM (GPQESE) - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
@@ -1328,7 +1332,7 @@ vendor/lib64/libsi.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# SecureMSM - LA.UM.9.11.r1-02200-NICOBAR.0
+# SecureMSM - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/KmInstallKeybox
 vendor/bin/StoreKeybox
 vendor/bin/hdcp1prov
@@ -1366,14 +1370,14 @@ vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 vendor/lib/libthermalclient.so
 
-# Time Services - LA.UM.9.11.r1-02200-NICOBAR.0
+# Time Services - LA.UM.9.11.r1-02600-NICOBAR.0
 -vendor/app/TimeService/TimeService.apk;PRESIGNED
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
-# WFD - LA.UM.9.11.r1-02200-NICOBAR.0
+# WFD - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
