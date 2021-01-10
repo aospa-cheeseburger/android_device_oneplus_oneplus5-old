@@ -505,6 +505,7 @@ vendor/lib/libwqe.so
 vendor/lib/libxml.so
 vendor/lib/vendor.qti.data.factory@2.0.so
 vendor/lib/vendor.qti.data.factory@2.1.so
+vendor/lib/vendor.qti.data.factory@2.2.so
 vendor/lib/vendor.qti.data.mwqem@1.0.so
 vendor/lib/vendor.qti.data.slm@1.0.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
@@ -527,6 +528,7 @@ vendor/lib64/libwqe.so
 vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
+vendor/lib64/vendor.qti.data.factory@2.2.so
 vendor/lib64/vendor.qti.data.mwqem@1.0.so
 vendor/lib64/vendor.qti.data.slm@1.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
@@ -545,6 +547,14 @@ vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
+
+# Connection Security - LA.UM.9.11.r1-02600-NICOBAR.0
+-vendor/app/SSGTelemetryService/SSGTelemetryService.apk;PRESIGNED
+-vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk;PRESIGNED
+vendor/bin/ssgqmigd
+vendor/bin/ssgtzd
+vendor/lib/libminksocket.so
+vendor/lib64/libminksocket.so
 
 # Data - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/ATFWD-daemon
@@ -647,10 +657,6 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/fp_hal_extension.so
 vendor/lib/vendor.oneplus.fingerprint.extension@1.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-
-# Gatekeeper (OOS)
-vendor/lib/hw/gatekeeper.msm8998.so
-vendor/lib64/hw/gatekeeper.msm8998.so
 
 # GPS - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/garden_app
@@ -929,6 +935,28 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 
+# Keymaster - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
+vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
+vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
+-vendor/etc/vintf/manifest/android.hardware.keymaster@4.1-service-default-qti.xml
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib/libkeymasterdeviceutils.so
+vendor/lib/libkeymasterprovision.so
+vendor/lib/libkeymasterutils.so
+vendor/lib/libqtikeymaster4.so
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so
+vendor/lib64/libqtikeymaster4.so
+
+# Latency - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/lib/vendor.qti.hardware.data.latency@1.0.so
+vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
+
 # Listen - OOS
 vendor/lib/hw/sound_trigger.primary.msm8998.so
 vendor/lib/libadpcmdec.so
@@ -986,14 +1014,19 @@ vendor/lib/libOmxSwVdec.so
 vendor/lib/libOmxSwVencMpeg4.so
 vendor/lib/libOmxWmaDec.so
 
+# MM OSAL - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/lib/libmmosal.so
+vendor/lib64/libmmosal.so
+
 # NFC (OOS)
 vendor/lib/libpn553_fw.so
 
-# Peripheral Manager - LA.UM.9.11.r1-02600-NICOBAR.0
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib64/libperipheral_client.so
+# PD - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/bin/pd-mapper
+vendor/lib/libpdmapper.so
+vendor/lib/libpdnotifier.so
+vendor/lib64/libpdmapper.so
+vendor/lib64/libpdnotifier.so
 
 # Performance - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
@@ -1051,6 +1084,12 @@ vendor/lib64/vendor.qti.hardware.perf@2.2.so
 # Performance - (Stock OOS)
 vendor/bin/energy-awareness
 vendor/etc/powerhint.xml
+
+# Peripheral Manager - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/bin/pm-proxy
+vendor/bin/pm-service
+vendor/lib/libperipheral_client.so
+vendor/lib64/libperipheral_client.so
 
 # Postprocessing - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/bin/hw/vendor.display.color@1.0-service|e8c561e3a169c3007b117515f2946f23a195a5e5
