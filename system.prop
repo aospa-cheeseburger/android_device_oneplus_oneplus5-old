@@ -75,18 +75,12 @@ vendor.gralloc.enable_fb_ubwc=1
 # DPM
 persist.vendor.dpm.feature=9
 
-# DRM
-drm.service.enabled=true
-
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 
 # GPS
 persist.vendor.overlay.izat.optin=rro
 persist.backup.ntpServer="0.pool.ntp.org"
-
-# Keymaster
-ro.hardware.keystore_desede=true
 
 # Media
 debug.stagefright.omx_default_rank=0

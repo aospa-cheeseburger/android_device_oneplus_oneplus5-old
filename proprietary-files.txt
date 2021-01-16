@@ -935,13 +935,11 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 
-# Keymaster - LA.UM.9.11.r1-02600-NICOBAR.0
+# Keymaster - LA.UM.9.6.2.r1-02100-89xx.0
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
--vendor/etc/vintf/manifest/android.hardware.keymaster@4.1-service-default-qti.xml
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
@@ -1261,13 +1259,10 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# QSEECOM - LA.UM.9.11.r1-02600-NICOBAR.0
+# QSEECOM - LA.UM.9.6.2.r1-02100-89xx.0
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
-vendor/bin/qseecom_sample_client
-vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
-vendor/etc/gpfspath_oem_config.xml
 vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
@@ -1322,21 +1317,21 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sensor_def_qcomdev.conf
 
-# Soter - from LA.UM.8.2.r1-06200-sdm660.0
--app/SoterService/SoterService.apk|897999e257f5e59ebe2f9ca08a4f5512602f6c5e
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|37f9501fa45a69ba3a27fd338704d76afc534bcb
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1f27eb012650705a40fac8fec6d0b2dd10a1ec22
-vendor/lib64/vendor.qti.hardware.soter@1.0.so|b08f0d2e92e0adce42127b5f978fa6bb22326ce1
+# Soter - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
+vendor/bin/vendor.qti.hardware.soter@1.0-provision
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so
+vendor/lib/vendor.qti.hardware.soter@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
-# SSR - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/bin/ssr_diag|e8ce0d08a05e4b737d520fdfc15395f716933ca4
-vendor/bin/ssr_setup|9cf9be4e2fe295a5e9313ffbb461603a9fd33e82
-vendor/bin/subsystem_ramdump|95d767081c102039dc96e2b00781cf43607cf1ea
-vendor/lib/libSubSystemShutdown.so|7714c39dd503f3121f87b877811fa8ac6e8b7247
-vendor/lib/libsubsystem_control.so|fe08da9f6a0e73a97231055c4ca8279a68432476
-vendor/lib64/libSubSystemShutdown.so|c934b2df57be86fdfb9bdf2046f9289af5e7a62c
-vendor/lib64/libsubsystem_control.so|b2e8c7eb9d999137ae99ea38f85d7dac59c6dcc2
+# SS Restart - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/bin/ssr_diag
+vendor/bin/ssr_setup
+vendor/bin/subsystem_ramdump
+vendor/lib/libsubsystem_control.so
+vendor/lib64/libsubsystem_control.so
 
 # SecureMSM (GPQESE) - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
@@ -1352,54 +1347,37 @@ vendor/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
-# SecureMSM (SECDISP) - from LA.UM.8.2.r1-06700-sdm660.0
+# SecureMSM (SECDISP) - from LA.UM.9.6.2.r1-02100-89xx.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/bin/secure_ui_sample_client
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/libSecureUILib.so
 vendor/lib/libStDrvInt.so
 vendor/lib/libsecureui_svcsock.so
 vendor/lib/libsecureui.so
-vendor/lib/libsi.so
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib64/libSecureUILib.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsecureui.so
-vendor/lib64/libsi.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# SecureMSM - LA.UM.9.11.r1-02600-NICOBAR.0
+# SecureMSM - LA.UM.9.6.2.r1-02100-89xx.0
 vendor/bin/KmInstallKeybox
 vendor/bin/StoreKeybox
-vendor/bin/hdcp1prov
-vendor/bin/hdcp2p2prov
 vendor/lib/libbase64.so
 vendor/lib/libcpion.so
 vendor/lib/libcppf.so
 vendor/lib/libhdcpsrm.so
-vendor/lib/libhdcp1prov.so
-vendor/lib/libhdcp2p2prov.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libops.so
 vendor/lib/libpvr.so
 vendor/lib/librmp.so
 vendor/lib/libqisl.so
-vendor/lib/libtrustedapploader.so
 vendor/lib/libtzdrmgenprov.so
 vendor/lib64/libbase64.so
 vendor/lib64/libcpion.so
 vendor/lib64/libhdcpsrm.so
-vendor/lib64/libhdcp1prov.so
-vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/liboemcrypto.so
-vendor/lib64/libops.so
 vendor/lib64/libpvr.so
 vendor/lib64/librmp.so
 vendor/lib64/libqisl.so
-vendor/lib64/libtrustedapploader.so
 vendor/lib64/libtzdrmgenprov.so
 
 # Thermal (OOS)
@@ -1416,55 +1394,38 @@ vendor/etc/init/init.time_daemon.rc
 vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
-# WFD - LA.UM.9.11.r1-02600-NICOBAR.0
-vendor/bin/wfdhdcphalservice
-vendor/bin/wfdvndservice
+# Wi-Fi Display - OOS
+vendor/bin/hdcp1prov
+vendor/bin/hdcp2p2prov
 vendor/bin/wifidisplayhalservice
-vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
-vendor/etc/init/wfdvndservice.rc
-vendor/etc/seccomp_policy/wfdhdcphalservice.policy
-vendor/etc/seccomp_policy/wfdvndservice.policy
-vendor/etc/seccomp_policy/wifidisplayhalservice.policy
-vendor/etc/wfdconfig.xml
-vendor/lib/libFileMux_proprietary.so
-vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libmiracast.so
-vendor/lib/libmmrtpdecoder_proprietary.so
-vendor/lib/libmmrtpencoder_proprietary.so
-vendor/lib/libwfdcodecv4l2_proprietary.so
+vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
+vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
+vendor/lib/libhdcp1prov.so
+vendor/lib/libhdcp2p2prov.so
+vendor/lib/libhdcpsrm.so
+vendor/lib/libhdmipassthru.so
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib/libmmosal_proprietary.so
 vendor/lib/libwfdcommonutils_proprietary.so
-vendor/lib/libwfdconfigutils_proprietary.so
-vendor/lib/libwfddisplayconfig_proprietary.so
+vendor/lib/libwfdhaldsmanager.so
 vendor/lib/libwfdhdcpcp.so
-vendor/lib/libwfdhdcpservice_proprietary.so
-vendor/lib/libwfdmminterface_proprietary.so
-vendor/lib/libwfdmmservice_proprietary.so
-vendor/lib/libwfdmmsrc_proprietary.so
+vendor/lib/libwfdmmservice.so
 vendor/lib/libwfdmodulehdcpsession.so
-vendor/lib/libwfdrtsp_proprietary.so
-vendor/lib/libwfdsessionmodule.so
-vendor/lib/libwfdsourcesession_proprietary.so
-vendor/lib/libwfdsourcesm_proprietary.so
-vendor/lib/libwfduibcinterface_proprietary.so
-vendor/lib/libwfduibcsink_proprietary.so
-vendor/lib/libwfduibcsinkinterface_proprietary.so
-vendor/lib/libwfduibcsrc_proprietary.so
-vendor/lib/libwfduibcsrcinterface_proprietary.so
-vendor/lib/libwfdutils_proprietary.so
-vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so
-vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
-vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
-vendor/lib64/libmiracast.so
-vendor/lib64/libwfddisplayconfig_proprietary.so
+vendor/lib64/libhdcp1prov.so
+vendor/lib64/libhdcp2p2prov.so
+vendor/lib64/libhdcpsrm.so
+vendor/lib64/libhdmipassthru.so
+vendor/lib64/libmm-hdcpmgr.so
+vendor/lib64/libmmosal_proprietary.so
 vendor/lib64/libwfdhdcpcp.so
-vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
-vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
 # Widevine - OP8 OOS
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|5aa424e97e92659be37cb2dad0de363aa6ef857f
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
 vendor/lib/mediadrm/libwvdrmengine.so|edfddb82e327b36dd6e310c6e7d56e42b1c4285e
+vendor/lib/liboemcrypto.so
 vendor/lib64/mediadrm/libwvdrmengine.so|ba68955bfe7ecb950426a1607a472fa381740c6b
 vendor/lib64/libwvhidl.so|232637b49d6035f3a3eeae4d133c56388ad37b27
+vendor/lib64/liboemcrypto.so
