@@ -160,10 +160,6 @@ TARGET_USES_HARDWARE_KEYS := true
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,${LOCAL_PATH}/configs/keylayout,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
 
-# Keymaster
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.keystore_desede=true
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.qti

@@ -658,6 +658,11 @@ vendor/lib/fp_hal_extension.so
 vendor/lib/vendor.oneplus.fingerprint.extension@1.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 
+# Gatekeeper - from LA.UM.8.2.r1-07400-sdm660.0
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|14751f15eba2a00f20a39d1ec4fccbacb819ab34
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|28bd17f6bc9000db048dc2b262494ab7ed31b2bd
+
 # GPS - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/garden_app
 vendor/bin/loc_launcher
@@ -809,6 +814,10 @@ vendor/lib64/libsdm-disp-vndapis.so|92fe3602eaaae1847965e8886d2cbef3d0a801f8
 vendor/lib64/libsdmextension.so|f1a7c8f98cfe34375f4e204e0a9283224c86aafe
 vendor/lib64/libtinyxml2_1.so|70942325afdd14eedcf11b3fbbfbc3d98f42f8dc
 
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|8bf06b86027ac6279cc4bdf9deaac45763591dee
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8ac0a0fb010f92bfa7de5981d643cf
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|841104a6d894f2afb733bb2317b70092298a8537
+
 # Graphics firmware (OOS)
 vendor/firmware/a225p5_pm4.fw
 vendor/firmware/a225_pfp.fw
@@ -935,21 +944,17 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 
-# Keymaster - LA.UM.9.6.2.r1-02100-89xx.0
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
-vendor/lib/libqtikeymaster4.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
+# Keymaster - from LA.UM.8.2.r1-07400-sdm660.0
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|de22b6873a674d48959ac5885b49cbff417b287a
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so|1dbe1bbde146e124897ff70b8c884ebb276ef570
+vendor/lib/libkeymasterdeviceutils.so|df3946ad31bfd7b0837376d6740b8b0f3ede588d
+vendor/lib/libkeymasterprovision.so|c9171be0c536346f8339fa466cdd0f05546a18b9
+vendor/lib/libkeymasterutils.so|7e07fa18fba352165c5e8e0169175c5f7d3088a8
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|56fbac8b3bb05f2587e86525db3ecc1f6047750f
+vendor/lib64/libkeymasterdeviceutils.so|ea44915adfee57f1bd813b2184987565d396ab82
+vendor/lib64/libkeymasterprovision.so|25505bda86672a5ae31f75b8f8af0a3560ef648f
+vendor/lib64/libkeymasterutils.so|2791994395cd10eb1092b8bd8fea15987e17421d
 
 # Latency - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/lib/vendor.qti.hardware.data.latency@1.0.so
@@ -1011,6 +1016,15 @@ vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxSwVdec.so
 vendor/lib/libOmxSwVencMpeg4.so
 vendor/lib/libOmxWmaDec.so
+
+# MMI - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
+vendor/bin/mmid
+vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
+vendor/etc/permissions/android.hardware.light.xml
+vendor/etc/permissions/vendor.qti.hardware.factory.xml
+vendor/lib64/vendor.qti.hardware.factory@1.0.so
+vendor/lib64/vendor.qti.hardware.factory@1.1.so
 
 # MM OSAL - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/lib/libmmosal.so
@@ -1080,14 +1094,13 @@ vendor/lib64/vendor.qti.hardware.perf@2.1.so
 vendor/lib64/vendor.qti.hardware.perf@2.2.so
 
 # Performance - (Stock OOS)
-vendor/bin/energy-awareness
 vendor/etc/powerhint.xml
 
-# Peripheral Manager - LA.UM.9.11.r1-02600-NICOBAR.0
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib64/libperipheral_client.so
+# Peripheral manager - from LA.UM.8.2.r1-07400-sdm660.0
+vendor/bin/pm-proxy|3182c937d93cc02c6721c053f57fc6794ad7edb3
+vendor/bin/pm-service|d41dabf5e4830f93b267d668d37e72aedae48163
+vendor/lib/libperipheral_client.so|6a95436d0d649fff0a48a4662a0781330e723ae1
+vendor/lib64/libperipheral_client.so|18796ea27c31bd39946f23f2b4173bafd26d9216
 
 # Postprocessing - from LA.UM.8.2.r1-06700-sdm660.0
 vendor/bin/hw/vendor.display.color@1.0-service|e8c561e3a169c3007b117515f2946f23a195a5e5
@@ -1106,6 +1119,25 @@ vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
+
+# QCC-TR-UI - LA.UM.9.11.r1-02600-NICOBAR.0
+-vendor/app/QCC-TR-UI/QCC-TR-UI.apk
+vendor/bin/qcc-trd
+
+# QCC VND HAL - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
+vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
+vendor/lib/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
+vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+
+# QDMA - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/etc/init/init.qdmastats.rc
+vendor/lib/libqdma_file_agent.so
+vendor/lib64/libqdma_file_agent.so
 
 # QMI - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/qmi-framework-tests/qmi_test_mt_client_init_instance
@@ -1245,47 +1277,66 @@ vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
 
-# QTEE - LA.UM.9.11.r1-02600-NICOBAR.0
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/libGPQTEEC_vendor.so
-vendor/lib/libGPTEE_vendor.so
-vendor/lib/libQTEEConnector_vendor.so
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+# QTEE - from Nokia ddv_sprout (m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
+-product/priv-app/seccamservice/seccamservice.apk|6bf6a5f5110f4a3552b198a626171750425d73f3
+product/lib/libGPQTEEC_system.qti.so|efa7c9fd159661e244b3a28cb4002502a9ec3131
+product/lib/libGPTEE_system.qti.so|a4f5937a9474350560dfb2af9bdf93c53aeb2e62
+product/lib/libQTEEConnector_system.so|95b375d877eb83999f1999a381427ff04517ce4a
+product/lib/libseccam.so|98a2033747178be930855da820dc9cd536e5c742
+product/lib/vendor.qti.hardware.qteeconnector@1.0.so|758d505d1ec01a2c74473f655bda9d8f7227b1be
+product/lib/vendor.qti.hardware.seccam@1.0.so|79f1111d13cd8109e103795186ceaa3f3ffb5979
+product/lib64/libGPQTEEC_system.qti.so|e1dfb344f6a30d3ca99ae9098516be6ffbf3d147
+product/lib64/libGPTEE_system.qti.so|f749602276fe3360e27cad3c4d162c25a8135a22
+product/lib64/libQTEEConnector_system.so|f7e5f7962e700edb2b0a7b407db0534fde4820f4
+product/lib64/libseccam.so|cabb819213ce6594cee6efafa4ea45de1f591de9
+product/lib64/vendor.qti.hardware.qteeconnector@1.0.so|14c3569a4098f93916d27dceeda918272a7f0d53
+product/lib64/vendor.qti.hardware.seccam@1.0.so|784a071a6f1c015901ad514850283876d1ee1cf7
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|b03632420eea636c9c1585d18703340cdf5dd2fe
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|80074629c1146be23b0f76932f2aebbac6210ac6
+vendor/lib/libQTEEConnector_vendor.so|0246dd4c292fffe7802f3334da9beae42ad172e0
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|c309a061b8b1582aaeb1995d522f2ab4c4807c36
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|d721412f01790f4b81b7a997af28aed7fa49e1eb
+vendor/lib64/libQTEEConnector_vendor.so|af84fc33a0a87d3c23d146e4658d8274d1d26805
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|b2d1f88ccd334631ea2002a5b6b5c8557201278f
 
-# QSEECOM - LA.UM.9.6.2.r1-02100-89xx.0
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
-vendor/bin/qseecomd
-vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib/libGPreqcancel.so
-vendor/lib/libGPreqcancel_svc.so
-vendor/lib/libQSEEComAPI.so
-vendor/lib/libdrmfs.so
-vendor/lib/libdrmtime.so
-vendor/lib/librpmb.so
-vendor/lib/libssd.so
-vendor/lib/vendor.qti.hardware.qseecom@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/librpmb.so
-vendor/lib64/libssd.so
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
+# QSEECOM - from Nokia ddv_sprout (m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
+vendor/bin/qseecomd|4e6d1b4071daaa67882294cc5ae4a25b3844be4e
+vendor/lib/libGPreqcancel.so|b6bd8b389e4a786f745940c443d1b048070c14ce
+vendor/lib/libGPreqcancel_svc.so|d6c8812da1c6758351216ac74eb3c174c255e7cd
+vendor/lib/libQSEEComAPI.so|be0e0f44f2229dcd170b7f669ba1ec8c0a6d34b2
+vendor/lib/libdrmfs.so|de40f84633345ad2d7cb4f2cf361d7d7fb8f570c
+vendor/lib/libdrmtime.so|8975fd695dee41f05d48f98474e2f88f91e6e955
+vendor/lib/librpmb.so|07d64872c581b6941f64299c3c4315b191acb2fa
+vendor/lib/libsdedrm.so|c8e069bb766dbb5a7c1e1419e22d69197e378609
+vendor/lib/libssd.so|58b1660d9df8e399f3de3ae91f6aa4600825a8d1
+vendor/lib64/libGPreqcancel.so|bfff7b7d51e917a16b9a15a27fb81e16d0359348
+vendor/lib64/libGPreqcancel_svc.so|d4216112bda75e1d3b06b679dcd8978da17dca93
+vendor/lib64/libQSEEComAPI.so|b8fb8b24be8070972b0dcca373f1928c08a783b3
+vendor/lib64/libdrmfs.so|0c219e1b302621e93aea867bfddeb05f12500149
+vendor/lib64/libdrmtime.so|c5de0592da3645851c3a428ddbb0164228fcb4e4
+vendor/lib64/librpmb.so|8a607240098d2786fc14868afa137f50c4dade1c
+vendor/lib64/libsdedrm.so|35060b2f7f93b1b3ab3b190e4365d135b9c2fd44
+vendor/lib64/libssd.so|d6758bd01b360be7bb68f35f56978a5e9a21d3c3
 
 # Radio - MBN (OOS)
 etc/firmware/mbn_ota/mbn_ota.txt:vendor/firmware/mbn_ota/mbn_ota.txt
 etc/firmware/tp/fw_synaptics_17801.img
 etc/firmware/tp/fw_synaptics_16859.img
+
+# RemoteFS
+vendor/bin/rmt_storage
+vendor/etc/init/vendor.qti.rmt_storage.rc
+
+# SMC Invoke - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/etc/ssg/ta_config.json
+vendor/etc/ssg/tz_whitelist.json
+vendor/lib/libminkdescriptor.so
+vendor/lib/libnative-api.so
+vendor/lib/libqcbor.so
+vendor/lib64/libminkdescriptor.so
+vendor/lib64/libnative-api.so
+vendor/lib64/libqcbor.so
 
 # Sensors - OOS
 product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
@@ -1317,21 +1368,31 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sensor_def_qcomdev.conf
 
-# Soter - LA.UM.9.11.r1-02600-NICOBAR.0
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
-vendor/bin/vendor.qti.hardware.soter@1.0-provision
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib/vendor.qti.hardware.soter@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
-
 # SS Restart - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/ssr_diag
 vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
 vendor/lib/libsubsystem_control.so
 vendor/lib64/libsubsystem_control.so
+
+# SecureMSM  - from Nokia ddv_sprout (m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
+vendor/bin/KmInstallKeybox
+vendor/bin/StoreKeybox
+vendor/lib/libbase64.so|fbb63136ef81c0bf8a0205c00b00cb9d63726594
+vendor/lib/libcpion.so|eb815cb13b2d951d980726cbdb4967884c34258c
+vendor/lib/libcppf.so|ff3a7b6f42a27d92925a0c56200d45197e7678d4
+vendor/lib/libhdcpsrm.so
+vendor/lib/libpvr.so
+vendor/lib/libqisl.so|07cffb5a14ed0a0d8e35bd02b23d251b9372e41d
+vendor/lib/librmp.so|cbafb1527c9d6fbee4833c71e1336e29f8a12761
+vendor/lib/libtzdrmgenprov.so|6a5b17fb166b22fb81690f8c6cc5f3a2c8e81eec
+vendor/lib64/libbase64.so|aefea4f161e08c46fdb8bf63285214fc30e727f1
+vendor/lib64/libcpion.so|5141bc9fc6c3464795fc4c44998a11e407109a41
+vendor/lib64/libhdcpsrm.so
+vendor/lib64/libpvr.so
+vendor/lib64/libqisl.so|c4e7f283f3d416b784f2ec0f7000d607e044809b
+vendor/lib64/librmp.so|aceae14771ff3a29824337fe5605d2a3d6572ed7
+vendor/lib64/libtzdrmgenprov.so|8212647c99363bcd42795cde7c74b8be3709fac8
 
 # SecureMSM (GPQESE) - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
@@ -1347,52 +1408,49 @@ vendor/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
-# SecureMSM (SECDISP) - from LA.UM.9.6.2.r1-02100-89xx.0
+# SecureMSM (SECDISP) - from Nokia ddv_sprout (m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
+product/lib/libsecureui_svcsock_system.so|d76880fbc9339b2591e7c962ba13f7bebfe80654
+product/lib/libsecureuisvc_jni.so|3992885f231edef629b6fb4128c3539104e9cdbe
+product/lib64/libsecureui_svcsock_system.so|b4d9a3d6ac88cf9d77c20dda9c7017ab44fe8c20
+product/lib64/libsecureuisvc_jni.so|cb479b0eefe4a8936895222c56cf9adcc83fc1fb
+vendor/bin/secure_ui_sample_client
+vendor/lib/libSecureUILib.so|92625a3ea59a92aea7771a2be460035662048bc6
+vendor/lib/libStDrvInt.so|71be3ab1bf6b912777c538b047191efb37248d3b
+vendor/lib/libsecureui.so|89cbd8e6f02b451c2a684628c0688c13272580ed
+vendor/lib/libsecureui_svcsock.so|28c84f2f75505d858395345a4fb238a4fe59e240
+vendor/lib/libsi.so|b7ed8b32302408c92b3fdeea6df67ad1b055c98b
+vendor/lib64/libSecureUILib.so|54ce5c719dfdeb0896187be4cf0903bf4e6c4ba7
+vendor/lib64/libStDrvInt.so|8de13b46e8f21016c0fffaec34b0a2bacfccec04
+vendor/lib64/libsecureui.so|a4b4b482ca046b6c9ceaf8321cad4b52ece1c5f2
+vendor/lib64/libsecureui_svcsock.so|d6b34f488754b48074d806b9057d32d82e28612a
+vendor/lib64/libsi.so|78755e9598f6874a1df4e9b057620c211839e56f
+
+# SecureMSM (TUI) - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/libStDrvInt.so
-vendor/lib/libsecureui_svcsock.so
-vendor/lib/libsecureui.so
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libsecureui.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# SecureMSM - LA.UM.9.6.2.r1-02100-89xx.0
-vendor/bin/KmInstallKeybox
-vendor/bin/StoreKeybox
-vendor/lib/libbase64.so
-vendor/lib/libcpion.so
-vendor/lib/libcppf.so
-vendor/lib/libhdcpsrm.so
-vendor/lib/libpvr.so
-vendor/lib/librmp.so
-vendor/lib/libqisl.so
-vendor/lib/libtzdrmgenprov.so
-vendor/lib64/libbase64.so
-vendor/lib64/libcpion.so
-vendor/lib64/libhdcpsrm.so
-vendor/lib64/libpvr.so
-vendor/lib64/librmp.so
-vendor/lib64/libqisl.so
-vendor/lib64/libtzdrmgenprov.so
+# Soter - from LA.UM.8.2.r1-07400-sdm660.0
+product/framework/vendor.qti.hardware.soter-V1.0-java.jar|e0a20a638cac4e369a29157ea4aa44b1e5d60f8f
+product/lib64/vendor.qti.hardware.soter@1.0.so|2c821316e61ecf506297c1f71cc2c1e9a960acb8
+vendor/bin/vendor.qti.hardware.soter@1.0-provision|ebbcfadcc416efd96cddb63068c6053d9730b21d
+vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|37f9501fa45a69ba3a27fd338704d76afc534bcb
+vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
+vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1f27eb012650705a40fac8fec6d0b2dd10a1ec22
+vendor/lib64/vendor.qti.hardware.soter@1.0.so|59f1fa3e2e53b755c95e45cb2364bf683ac37cdb
 
-# Thermal (OOS)
-vendor/bin/thermal-engine
-vendor/etc/thermal-engine.conf
-vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
-vendor/lib/libthermalclient.so
+# Thermal - from LA.UM.8.2.r1-07400-sdm660.0
+vendor/bin/thermal-engine|ca43d430181339bd02cddc771584b0e4e1846c0b
+-vendor/lib/libthermalclient.so|34b6ee056ae8a6df578fc243f8acd3567a49d97b
+-vendor/lib64/libthermalclient.so|20f1fd238fc81bf1c6828ec416121c0ef66e0df1
+vendor/lib64/libthermalioctl.so|e1844c66a556946b45bcb6c2e747460aa5201770
 
-# Time Services - LA.UM.9.11.r1-02600-NICOBAR.0
--vendor/app/TimeService/TimeService.apk;PRESIGNED
-vendor/bin/time_daemon
-vendor/etc/init/init.time_daemon.rc
-vendor/lib/libtime_genoff.so
-vendor/lib64/libtime_genoff.so
+# Time services - from LA.UM.8.2.r1-07400-sdm660.0
+-vendor/app/TimeService/TimeService.apk|c935b678fdaed033513f044f6492361c3370f9f0
+vendor/bin/time_daemon|a213fb73b9b1cbbdb631851a337ffd64ae08367e
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+-vendor/lib64/libtime_genoff.so|216cbb72e22a0ca76d766dc0b84055c5b31e0a4c
 
 # Wi-Fi Display - OOS
 vendor/bin/hdcp1prov
