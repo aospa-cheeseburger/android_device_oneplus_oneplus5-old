@@ -747,10 +747,9 @@ vendor/lib/fp_hal_extension.so
 vendor/lib/vendor.oneplus.fingerprint.extension@1.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 
-# Gatekeeper - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|14751f15eba2a00f20a39d1ec4fccbacb819ab34
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|28bd17f6bc9000db048dc2b262494ab7ed31b2bd
+# Gatekeeper
+vendor/lib/hw/gatekeeper.msm8998.so
+vendor/lib64/hw/gatekeeper.msm8998.so
 
 # GPS - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/garden_app
@@ -1024,16 +1023,16 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 
 # Keymaster - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|de22b6873a674d48959ac5885b49cbff417b287a
-vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so|1dbe1bbde146e124897ff70b8c884ebb276ef570
 vendor/lib/libkeymasterdeviceutils.so|df3946ad31bfd7b0837376d6740b8b0f3ede588d
 vendor/lib/libkeymasterprovision.so|c9171be0c536346f8339fa466cdd0f05546a18b9
 vendor/lib/libkeymasterutils.so|7e07fa18fba352165c5e8e0169175c5f7d3088a8
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|56fbac8b3bb05f2587e86525db3ecc1f6047750f
 vendor/lib64/libkeymasterdeviceutils.so|ea44915adfee57f1bd813b2184987565d396ab82
 vendor/lib64/libkeymasterprovision.so|25505bda86672a5ae31f75b8f8af0a3560ef648f
 vendor/lib64/libkeymasterutils.so|2791994395cd10eb1092b8bd8fea15987e17421d
+
+# Keystore
+vendor/lib/hw/keystore.msm8998.so
+vendor/lib64/hw/keystore.msm8998.so
 
 # Latency - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/lib/vendor.qti.hardware.data.latency@1.0.so
@@ -1052,7 +1051,6 @@ vendor/lib/libsmwrapper.so
 vendor/lib/libAlacSwDec.so|d082d6eeedd8a84bd1b720d515ede48e74392dd4
 vendor/lib/libApeSwDec.so|12c5bfd798a14114a58e55c0713e8e238ccbb83f
 vendor/lib/libFlacSwDec.so|ad62260c534b60df028f5c5741086592aad7e220
-vendor/lib/libgpustats.so|86d0490b5ccdbeeba64c4f06a9f1503d01eaeabc
 vendor/lib/libI420colorconvert.so|3aa40a7c120ddd7850c98f20e312fc67cec34507
 vendor/lib/libmm-color-convertor.so|650a2ac25ff610a9472d145d82ffbf7fb00bd17b
 vendor/lib/libOmxAacDec.so|08ab281625ecadee2f0c387149f843fcd7b2a5df
@@ -1072,7 +1070,6 @@ vendor/lib/libvqzip.so|224d6ed62e52b470d9821b99e59c0857609870a5
 vendor/lib64/libAlacSwDec.so|6e0e351d24c3b7b848f2923cf7d69d3e63ec9800
 vendor/lib64/libApeSwDec.so|c6853b37276ab4d26956d54e477b801f10216693
 vendor/lib64/libFlacSwDec.so|ed4d15211dcdb839acc0effc0c450ad549ad659d
-vendor/lib64/libgpustats.so|dd2ecc6c5ef439a8d427a52ab9d153f8e747deff
 vendor/lib64/libI420colorconvert.so|d454d596918ca313ce11159b63f40e98a35f4f01
 vendor/lib64/libmm-color-convertor.so|6cd70ba35581b6e16b1a48d0139a6e2c5d6e35fa
 vendor/lib64/libOmxAacDec.so|bbc92bee08c6e78189932faaaac47a4ebd6083a1
@@ -1434,15 +1431,18 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so|59f1fa3e2e53b755c95e45cb2364bf683a
 
 # Thermal - from LA.UM.8.2.r1-07400-sdm660.0
 vendor/bin/thermal-engine|ca43d430181339bd02cddc771584b0e4e1846c0b
--vendor/lib/libthermalclient.so|34b6ee056ae8a6df578fc243f8acd3567a49d97b
--vendor/lib64/libthermalclient.so|20f1fd238fc81bf1c6828ec416121c0ef66e0df1
+vendor/lib/libthermalclient.so|34b6ee056ae8a6df578fc243f8acd3567a49d97b
+vendor/lib64/libthermalclient.so|20f1fd238fc81bf1c6828ec416121c0ef66e0df1
 vendor/lib64/libthermalioctl.so|e1844c66a556946b45bcb6c2e747460aa5201770
+
+# Thermal COnfig - Stock
+vendor/etc/thermal-engine.conf
 
 # Time services - from LA.UM.8.2.r1-07400-sdm660.0
 -vendor/app/TimeService/TimeService.apk|c935b678fdaed033513f044f6492361c3370f9f0
 vendor/bin/time_daemon|a213fb73b9b1cbbdb631851a337ffd64ae08367e
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
--vendor/lib64/libtime_genoff.so|216cbb72e22a0ca76d766dc0b84055c5b31e0a4c
+vendor/lib64/libtime_genoff.so|216cbb72e22a0ca76d766dc0b84055c5b31e0a4c
 
 # Wi-Fi Display - OOS
 vendor/bin/hdcp1prov
