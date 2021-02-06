@@ -1,89 +1,106 @@
-# ADSP - from LA.UM.8.2.r1-06700-sdm660.0
-lib/libadsprpc_system.so|64294323038962ca2d6bd93d61451e605c054563
-lib/libmdsprpc_system.so|5e8d71b29afefa66d751a2a07b8f2c3d5405df63
-lib/libsdsprpc_system.so|fa1cfa1317b6c37af70fc1c2c76e895409f1ead1
-lib64/libadsprpc_system.so|6b03ee0921475c4e224a3ce577e1afb2032cd285
-lib64/libmdsprpc_system.so|d9f9baba5fbaaf8393a507a8b12e228577499026
-lib64/libsdsprpc_system.so|55a60eb52226a77ec00ad5c049533ef6dacd72bf
-vendor/bin/adsprpcd|5b803e679ddbce4e59c2a67433ffefa6396d61f3
-vendor/lib/libadsp_default_listener.so|3b33fc04b04a2229e60634623d350dac4a936797
-vendor/lib/libadsp_hvx_callback_skel.so|67cb46e6da3fa84d0cf086172591ba13493e663f
-vendor/lib/libadsp_hvx_stub.so|d5c2f0bc990c879fdbb4149c337d592c8762972b
-vendor/lib/libadsprpc.so|8a5977bdb9a1a012f20aa5a9a1b887603e4748d2
-vendor/lib/libfastcvadsp_stub.so|9957df1493863d78da261ab3bb8756be3f3d2583
-vendor/lib/libfastcvopt.so|54aeebd0e77d1f083a4e3db64bca9da3c295bc35
-vendor/lib/libfastrpc_utf_stub.so|793413aac79aa4cb66bcd45d80195849eed8acd7
-vendor/lib/libmdsprpc.so|177b846743d1c91e3ba292157c8689417661eb33
-vendor/lib/libsdsprpc.so|859cbbd3740d97ef394e547f9c7116823e03fca1
-vendor/lib/libssc_default_listener.so|7ee6a08fda28475e5a30589b3ed25d065173ba9a
-vendor/lib64/libadsp_default_listener.so|2411edf852600158588e40858b4183566733438e
-vendor/lib64/libadsprpc.so|e2276c0a39b3c30569c94a2fb9e2b79f629aeace
-vendor/lib64/libfastcvadsp_stub.so|f84fd537f8f176e598c0cb49f0c457f308b67be4
-vendor/lib64/libfastcvopt.so|dc653999335457eb66e899ca84393c02a378172b
-vendor/lib64/libfastrpc_utf_stub.so|891a4c987862c1b2d844379f8fb3bcdcb737e8c1
-vendor/lib64/libmdsprpc.so|c8b3b4475d666d6fc989ae10066df72de1c4c80c
-vendor/lib64/libsdsprpc.so|031c11dde8653ba3fb489d8216170822dfd8e691
-vendor/lib64/libssc_default_listener.so|c7bac4dedafcd262267970007ce04dfcc8ca1e42
+# Common proprietary files - from
+# OnePlus/OnePlus5/OnePlus5:10/QKQ1.191014.012/2010292059, unless pinned
 
-# ADSP Modules - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
-vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|26fb64a92d48e801a31a867976d325efa366a255
-vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|05776246445316aea822eaa9cb6ae7a47b23c9aa
-vendor/lib/rfsa/adsp/libapps_mem_heap.so|fd362c6b0e30f62cc3fc4566855f46706d2c3c50
-vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
-vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|a06a3f52e89d219d2da0c7205e714cd7429b267c
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so|c240d45c3a5fc37b964c4adab06f4cb0bfda62f5
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so|99752b14bc669589f598b2c555af96834147e41e
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
-vendor/lib/rfsa/adsp/libscveT2T_skel.so|487f830aca26c85ef79c8b599b2f03668ab732b5
-vendor/lib/rfsa/adsp/libvpp_svc_skel.so|2da97f61c1d14f1f9a38aecd8ab89a1f6fa8d991
+# ADSP / CDSP / MDSP / SDSP
+lib/libadsprpc_system.so
+lib/libcdsprpc_system.so
+lib/libmdsprpc_system.so
+lib64/libadsprpc_system.so
+lib64/libcdsprpc_system.so
+lib64/libmdsprpc_system.so
+vendor/bin/adsprpcd
+vendor/bin/cdsprpcd
+vendor/etc/dirac/interfacedb
+vendor/etc/diracvdd.bin
+vendor/lib/libadsp_default_listener.so
+vendor/lib/libadsp_hvx_callback_skel.so
+vendor/lib/libadsp_hvx_stub.so
+vendor/lib/libadsprpc.so
+vendor/lib/libcdsp_default_listener.so
+vendor/lib/libcdsprpc.so
+vendor/lib/libfastcrc.so
+vendor/lib/libfastcvadsp_stub.so
+vendor/lib/libfastcvopt.so
+vendor/lib/libfastrpc_utf_stub.so
+vendor/lib/libmdsprpc.so
+vendor/lib/libsdsprpc.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libcdsp_default_listener.so
+vendor/lib64/libcdsprpc.so
+vendor/lib64/libfastcrc.so
+vendor/lib64/libfastcvadsp_stub.so
+vendor/lib64/libfastcvopt.so
+vendor/lib64/libfastrpc_utf_stub.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/libsdsprpc.so
 
-# CDSP - from LA.UM.8.2.r1-06700-sdm660.0
-lib/libcdsprpc_system.so|111797b70a5274be1af0b343ef54966478bfcd39
-lib64/libcdsprpc_system.so|81db24d014a39b109a8b65b770b24344d0dfe9d2
-vendor/bin/cdsprpcd|6fb2700151a6e6dd57a5d9a388cf3a95d3e8262b
-vendor/lib/libcdsp_default_listener.so|a65a21fb52a98fc769957294fbdc2e22dcd3046f
-vendor/lib/libcdsprpc.so|5923636bf782c56de6778f77cf570fb0ccafdc5d
-vendor/lib/libsysmon_cdsp_skel.so|9c088c263500259484a3b7c611efd413464b4d34
-vendor/lib64/libcdsp_default_listener.so|33260b098ddde2d0e6cf44b11f12e4c16264fda5
-vendor/lib64/libcdsprpc.so|d04c40305c6ce6c6cf932a543a18508b2247ece8
-vendor/lib64/libsysmon_cdsp_skel.so|40d3511922c744016c419983b18f97952c23fee5
+# ADSP modules
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
+vendor/lib/rfsa/adsp/dirac_resource.dar
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so
+vendor/lib/rfsa/adsp/libadsp_fd_skel.so
+vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
+vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
+vendor/lib/rfsa/adsp/libapps_mem_heap.so
+vendor/lib/rfsa/adsp/libdirac-capiv2.so
+vendor/lib/rfsa/adsp/libdspCV_skel.so
+vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
+vendor/lib/rfsa/adsp/libscveT2T_skel.so
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib/rfsa/adsp/libvpp_frc.so
+vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
-# Audio - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/lib/libacdb-fts.so|a2f09f2a01c326d6b57b1c0e406c92850ceef439
-vendor/lib/libacdbloader.so|3c294e9ed4ab4640830197f33028b342f9351a0f
-vendor/lib/libacdbrtac.so|98a8a9cf331cc10c755c808da3bf4da5d4de0c2a
-vendor/lib/libadiertac.so|9d6c62200d81e28ccd78aef6ce8e223655f102b6
-vendor/lib/libadm.so|2a275948330d0b50cbbaee644d81ffa6cfb54590
-vendor/lib/libaudcal.so|2c7b95a1c0e43f1c7d8d679f472343776f7bf718
-vendor/lib/libaudioalsa.so|1d8eb7dae06b1cca0cd360a5996bb59a9bd8ba25
-vendor/lib/libaudioparsers.so|d898e3d2cc8177e916052527135258c8d9fc7e89
-vendor/lib/libdrc.so|aa8e8dd2a27803bf8ac36619036e1dc736be540b
-vendor/lib/libqtigef.so|10b64bf536b4edb6c09d047c218cfe4c9a9255f1
-vendor/lib64/libacdb-fts.so|fe3610a7cce613592e90245ce98a23be1763545c
-vendor/lib64/libacdbloader.so|1ca9195a3f00064f3addaf2e9443609d07fd8940
-vendor/lib64/libacdbrtac.so|51d6d796b8d0815b8a7670dfbcd449dd3bb51506
-vendor/lib64/libadiertac.so|8f77a71f76ef3a88d06955c4d6d4d915d62c4c94
-vendor/lib64/libaudcal.so|80ee15046e7a7249a0c9def9bf3f3d94efd3ce6a
-vendor/lib64/libaudioalsa.so|bdf49c709df8a1a7a7e232a6cb1ba6d15af594c7
-vendor/lib64/libaudioparsers.so|ad9394501d467fd264675ead74a4e6bab34eadd5
-vendor/lib64/libqtigef.so|1b7fa4dacefd97f019c342477ff57dc861e70277
+# Audio
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libadm.so
+vendor/lib/libaudcal.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioalsa.so
+vendor/lib/libaudioconfigstore.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libdrc.so
+vendor/lib/libqtigef.so
+vendor/lib/libsurround_3mic_proc.so
+vendor/lib64/libacdb-fts.so
+vendor/lib64/libacdbloader.so
+vendor/lib64/libacdbrtac.so
+vendor/lib64/libadiertac.so
+vendor/lib64/libaudcal.so
+vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libaudioalsa.so
+vendor/lib64/libaudioconfigstore.so
+vendor/lib64/libaudioparsers.so
+vendor/lib64/libqtigef.so
 
-# Audio FX modules - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/lib/soundfx/libasphere.so|eaa35262337a8401aaecf02997e98e24083f064c
-vendor/lib/soundfx/libqcbassboost.so|21670836de855a24f1b2424a9c4ad7c6cac3afa0
-vendor/lib/soundfx/libqcreverb.so|3a93eecfdec56b2754a6256a75578ed26f5c61ba
-vendor/lib/soundfx/libqcvirt.so|fd081ae5705152d75d577034f8ac1920b0bb9ca7
-vendor/lib64/soundfx/libasphere.so|27154ce2eed6902f36ed8c85324cf61c96c8af02
-vendor/lib64/soundfx/libqcbassboost.so|d729c008d1b8925d60078b2733010708bdfed2c4
-vendor/lib64/soundfx/libqcreverb.so|1dba604109a6f1c41285aa70b88274d5fddbb656
-vendor/lib64/soundfx/libqcvirt.so|7b11552f1100a6b6146865ceba853d331946b913
+# Audio ACDB
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
+vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# Audio Firmware (OOS)
+# Audio firmware
 vendor/etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
+
+# Audio FX modules
+etc/permissions/audiosphere.xml
+framework/audiosphere.jar
+vendor/lib/soundfx/libasphere.so
+vendor/lib64/soundfx/libasphere.so
 
 # Bluetooth - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -119,9 +136,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
-# Charger - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/bin/hvdcp_opti|2ec1df65507776891f729cf1784579dc703d05cb
-
 # Camera
 framework/com.qualcomm.qti.camera.jar
 vendor/etc/camera/camera_config.xml
@@ -129,45 +143,21 @@ vendor/etc/camera/imx350_chromatix.xml
 vendor/etc/camera/imx371_chromatix.xml
 vendor/etc/camera/imx376k_chromatix.xml
 vendor/etc/camera/imx398_chromatix.xml
+vendor/etc/camera/license.lic
 vendor/etc/scve/facereco/gModel.dat
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libmmcamera2_frame_algorithm.so
-vendor/lib64/libmmcamera2_is.so
-vendor/lib64/libmmcamera2_q3a_core.so
-vendor/lib64/libmmcamera2_stats_algorithm.so
-vendor/lib64/libmmcamera2_stats_lib.so
-vendor/lib64/libmmcamera_dbg.so
-vendor/lib64/libmmcamera_faceproc.so
-vendor/lib64/libmmcamera_faceproc2.so
-vendor/lib64/libmmcamera_tintless_algo.so
-vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib64/libscveBlobDescriptor.so
-vendor/lib64/libscveFaceRecognition.so
-vendor/lib64/libscvePanorama_lite.so
-vendor/lib64/libscveCommon_stub.so
-vendor/lib64/libscveBlobDescriptor_stub.so
-vendor/lib64/libscveFaceLandmarks.so
-vendor/lib64/libscvePanorama.so
-vendor/lib64/libscveCommon.so
-vendor/lib64/libscveObjectTracker.so
-vendor/lib64/libscveObjectTracker_stub.so
-vendor/lib64/libscveObjectSegmentation.so
-vendor/lib64/libscveObjectSegmentation_stub.so
-vendor/lib64/libseemore.so
-vendor/lib64/libUBWC.so
-vendor/lib64/libvideoutils.so
+vendor/lib/libDeVIS.so
+vendor/lib/libEIS.so
+vendor/lib/libOGLManager.so
+vendor/lib/libSTDualCamCaptureBokeh.so
+vendor/lib/libSTDualCamPreviewBokeh.so
+vendor/lib/libSTdisp.so
+vendor/lib/libSonyIMX350PdafLibrary.so
+vendor/lib/libSonyIMX371RmscLibrary.so
+vendor/lib/libUBWC.so
 vendor/lib/libVDBlurlessAPI_v2.so
 vendor/lib/libVDDualCameraBlurlessAPI.so
 vendor/lib/libVDHDRAPI.so
 vendor/lib/libVDSuperPhotoAPI.so
-vendor/lib/libUBWC.so
-vendor/lib/libmm-qcamera.so
-vendor/lib/libopposfr.so
-vendor/lib/libblur_channel.so
-vendor/lib/libmmcamera_interface.so
-vendor/lib/libmmjpeg_interface.so
-vendor/lib/libmmlib2d_interface.so
-vendor/lib/libqomx_core.so
 vendor/lib/libarcsoft_dualcam_bokeh_api.so
 vendor/lib/libarcsoft_dualcam_refocus_left.so
 vendor/lib/libarcsoft_dualcam_refocus_preview.so
@@ -175,13 +165,25 @@ vendor/lib/libarcsoft_dualcam_refocus_right.so
 vendor/lib/libarcsoft_hdr_denoise_api.so
 vendor/lib/libarcsoft_high_dynamic_range.so
 vendor/lib/libarcsoft_smart_denoise.so
+vendor/lib/libblur_channel.so
 vendor/lib/libcamera_oneplus_bokeh_wrapper.so
-vendor/lib/libcdsprpc.so
 vendor/lib/libcvface_api.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
+vendor/lib/libmm-qcamera.so
+vendor/lib/libmmcamera2_c2d_module.so
+vendor/lib/libmmcamera2_cpp_module.so
+vendor/lib/libmmcamera2_frame_algorithm.so
+vendor/lib/libmmcamera2_is.so
+vendor/lib/libmmcamera2_isp_modules.so
+vendor/lib/libmmcamera2_mct_shimlayer.so
+vendor/lib/libmmcamera2_pp_buf_mgr.so
+vendor/lib/libmmcamera2_pproc_modules.so
+vendor/lib/libmmcamera2_q3a_core.so
+vendor/lib/libmmcamera2_stats_algorithm.so
+vendor/lib/libmmcamera2_stats_lib.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dummyalgo.so
 vendor/lib/libmmcamera_eebinparse.so
@@ -201,13 +203,14 @@ vendor/lib/libmmcamera_imx371.so
 vendor/lib/libmmcamera_imx376k.so
 vendor/lib/libmmcamera_imx376k_gt24c64_eeprom.so
 vendor/lib/libmmcamera_imx398_gt24c64_eeprom.so
+vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_quadracfa.so
-vendor/lib/libmmcamera_sony_imx371_eeprom.so
 vendor/lib/libmmcamera_s5k3p8sp_m24c64s_eeprom.so
+vendor/lib/libmmcamera_sony_imx371_eeprom.so
 vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
@@ -215,46 +218,77 @@ vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
-vendor/lib/libmmcamera2_c2d_module.so
-vendor/lib/libmmcamera2_cpp_module.so
-vendor/lib/libmmcamera2_frame_algorithm.so
-vendor/lib/libmmcamera2_is.so
-vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_mct_shimlayer.so
-vendor/lib/libmmcamera2_pp_buf_mgr.so
-vendor/lib/libmmcamera2_pproc_modules.so
-vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_lib.so
 vendor/lib/libmmjpeg.so
+vendor/lib/libmmjpeg_interface.so
+vendor/lib/libmmlib2d_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmpbase.so
+vendor/lib/libopposfr.so
+vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
-vendor/lib/libthread_blur.so
-vendor/lib/libSonyIMX350PdafLibrary.so
-vendor/lib/libSonyIMX371RmscLibrary.so
+vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libscveBlobDescriptor.so
-vendor/lib/libscveFaceRecognition.so
-vendor/lib/libscvePanorama_lite.so
-vendor/lib/libscveCommon_stub.so
 vendor/lib/libscveBlobDescriptor_stub.so
-vendor/lib/libscveFaceLandmarks.so
-vendor/lib/libscvePanorama.so
 vendor/lib/libscveCommon.so
-vendor/lib/libscveObjectTracker.so
-vendor/lib/libscveObjectTracker_stub.so
+vendor/lib/libscveCommon_stub.so
+vendor/lib/libscveFaceLandmarks.so
+vendor/lib/libscveFaceRecognition.so
 vendor/lib/libscveObjectSegmentation.so
 vendor/lib/libscveObjectSegmentation_stub.so
+vendor/lib/libscveObjectTracker.so
+vendor/lib/libscveObjectTracker_stub.so
+vendor/lib/libscvePanorama.so
+vendor/lib/libscvePanorama_lite.so
 vendor/lib/libseemore.so
 vendor/lib/libstblur_capture_api.so
-vendor/lib/libSTDualCamCaptureBokeh.so
-vendor/lib/libSTDualCamPreviewBokeh.so
-vendor/lib/libSTdisp.so
+vendor/lib/libthread_blur.so
 vendor/lib/libvideoutils.so
-vendor/lib/libvidhance.so
+vendor/lib64/libDeVIS.so
+vendor/lib64/libEIS.so
+vendor/lib64/libOGLManager.so
+vendor/lib64/libUBWC.so
+vendor/lib64/libcdsprpc.so
+vendor/lib64/libmmcamera2_frame_algorithm.so
+vendor/lib64/libmmcamera2_is.so
+vendor/lib64/libmmcamera2_q3a_core.so
+vendor/lib64/libmmcamera2_stats_algorithm.so
+vendor/lib64/libmmcamera2_stats_lib.so
+vendor/lib64/libmmcamera_dbg.so
+vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_faceproc2.so
+vendor/lib64/libmmcamera_tintless_algo.so
+vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
+vendor/lib64/libscveBlobDescriptor.so
+vendor/lib64/libscveBlobDescriptor_stub.so
+vendor/lib64/libscveCommon.so
+vendor/lib64/libscveCommon_stub.so
+vendor/lib64/libscveFaceLandmarks.so
+vendor/lib64/libscveFaceRecognition.so
+vendor/lib64/libscveObjectSegmentation.so
+vendor/lib64/libscveObjectSegmentation_stub.so
+vendor/lib64/libscveObjectTracker.so
+vendor/lib64/libscveObjectTracker_stub.so
+vendor/lib64/libscvePanorama.so
+vendor/lib64/libscvePanorama_lite.so
+vendor/lib64/libseemore.so
+vendor/lib64/libvideoutils.so
+
+# Camera
+vendor/etc/camera/imx398_chromatix.xml
+vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so
+vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so
+vendor/lib/libchromatix_imx398_3a_wechat_preview.so
+vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so
+vendor/lib/libchromatix_imx398_preview_1080p_cpp.so
+vendor/lib/libmmcamera_imx398.so
+vendor/lib/libmmcamera2_iface_modules.so
+vendor/lib/libmmcamera2_imglib_modules.so
+vendor/lib/libmmcamera2_mct.so
+vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/hw/camera.msm8998.so
 
 # Camera actuators
 vendor/lib/libactuator_lc898217xc_imx350.so
@@ -361,45 +395,23 @@ vendor/lib/libchromatix_imx398_isp_manual.so
 vendor/lib/libchromatix_imx398_isp_panorama.so
 vendor/lib/libchromatix_imx398_postproc.so
 
+# Camera / DSP - Hexagon libraries
+vendor/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
+vendor/lib/rfsa/adsp/libdepthmap_skel.so
+vendor/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so
+vendor/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so
+vendor/lib/rfsa/adsp/libthread_blur_skel.so
+
 # Camera etc
-vendor/etc/camera/attribute.model
 vendor/etc/camera/ashdr/iso617_4608x3456.ncf
 vendor/etc/camera/ashdr/ncf_pack.ncf
 vendor/etc/camera/ashdr/ncf_pack_imx371.ncf
 vendor/etc/camera/ashdr/ncf_pack_imx519.ncf
+vendor/etc/camera/attribute.model
 
-# Camera postprocessing
-vendor/etc/GyroOffset_db.config
-vendor/etc/fsync_db.config
-vendor/etc/oneplus5_vstab_db_1080p_video_0_30fps.config
-vendor/etc/oneplus5_vstab_db_1080p_video_0_60fps.config
-vendor/etc/oneplus5_vstab_db_1080p_video_1_30fps.config
-vendor/etc/oneplus5_vstab_db_4k_video_0_30fps.config
-vendor/etc/oneplus5_vstab_db_720p_video_0_30fps.config
-vendor/etc/oneplus5_vstab_db_720p_video_1_30fps.config
-vendor/etc/oneplus5T_vstab_db_1080p_video_0_30fps.config
-vendor/etc/oneplus5T_vstab_db_1080p_video_0_60fps.config
-vendor/etc/oneplus5T_vstab_db_1080p_video_1_30fps.config
-vendor/etc/oneplus5T_vstab_db_4k_video_0_30fps.config
-vendor/etc/oneplus5T_vstab_db_720p_video_0_30fps.config
-vendor/etc/oneplus5T_vstab_db_720p_video_1_30fps.config
-vendor/lib/lib_oneplus_facebeauty.so
-vendor/lib/lib_oneplus_watermark.so
-vendor/lib/libmms_gyro_vstab_auth.so
-vendor/lib/libmms_gyro_vstab.so
-vendor/lib/libmms_hal_vstab.so
-vendor/lib/libmms_warper_vstab.so
-vendor/lib/libopcamera_native_modules.so
-vendor/lib/libSensorManagerHAL.so
-
-# Camera / DSP - Hexagon libraries
-vendor/lib/rfsa/adsp/libdepthmap_skel.so
-vendor/lib/rfsa/adsp/libthread_blur_skel.so
-vendor/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so
-vendor/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so
-vendor/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
-
-# Camera firmware (OOS)
+# Camera firmware
+etc/firmware/cpp_firmware_v1_10_0.fw:vendor/firmware/cpp_firmware_v1_10_0.fw
+etc/firmware/cpp_firmware_v1_12_0.fw:vendor/firmware/cpp_firmware_v1_12_0.fw
 etc/firmware/cpp_firmware_v1_1_1.fw:vendor/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw:vendor/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw:vendor/firmware/cpp_firmware_v1_2_0.fw
@@ -409,10 +421,32 @@ etc/firmware/cpp_firmware_v1_5_1.fw:vendor/firmware/cpp_firmware_v1_5_1.fw
 etc/firmware/cpp_firmware_v1_5_2.fw:vendor/firmware/cpp_firmware_v1_5_2.fw
 etc/firmware/cpp_firmware_v1_6_0.fw:vendor/firmware/cpp_firmware_v1_6_0.fw
 etc/firmware/cpp_firmware_v1_8_0.fw:vendor/firmware/cpp_firmware_v1_8_0.fw
-etc/firmware/cpp_firmware_v1_10_0.fw:vendor/firmware/cpp_firmware_v1_10_0.fw
-etc/firmware/cpp_firmware_v1_12_0.fw:vendor/firmware/cpp_firmware_v1_12_0.fw
 
-# Camera sensors (OOS)
+# Camera postprocessing
+vendor/etc/GyroOffset_db.config
+vendor/etc/fsync_db.config
+vendor/etc/oneplus5T_vstab_db_1080p_video_0_30fps.config
+vendor/etc/oneplus5T_vstab_db_1080p_video_0_60fps.config
+vendor/etc/oneplus5T_vstab_db_1080p_video_1_30fps.config
+vendor/etc/oneplus5T_vstab_db_4k_video_0_30fps.config
+vendor/etc/oneplus5T_vstab_db_720p_video_0_30fps.config
+vendor/etc/oneplus5T_vstab_db_720p_video_1_30fps.config
+vendor/etc/oneplus5_vstab_db_1080p_video_0_30fps.config
+vendor/etc/oneplus5_vstab_db_1080p_video_0_60fps.config
+vendor/etc/oneplus5_vstab_db_1080p_video_1_30fps.config
+vendor/etc/oneplus5_vstab_db_4k_video_0_30fps.config
+vendor/etc/oneplus5_vstab_db_720p_video_0_30fps.config
+vendor/etc/oneplus5_vstab_db_720p_video_1_30fps.config
+vendor/lib/libSensorManagerHAL.so
+vendor/lib/lib_oneplus_facebeauty.so
+vendor/lib/lib_oneplus_watermark.so
+vendor/lib/libmms_gyro_vstab.so
+vendor/lib/libmms_gyro_vstab_auth.so
+vendor/lib/libmms_hal_vstab.so
+vendor/lib/libmms_warper_vstab.so
+vendor/lib/libopcamera_native_modules.so
+
+# Camera sensors
 vendor/lib/libmmcamera_isp_abf48.so
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so
 vendor/lib/libmmcamera_isp_bf_stats47.so
@@ -617,26 +651,10 @@ vendor/firmware/ipa_fws.mdt
 vendor/xbin/dashd
 
 # Diag - LA.UM.9.11.r1-02600-NICOBAR.0
-vendor/bin/PktRspTest
-vendor/bin/diag_callback_sample
-vendor/bin/diag_dci_sample
-vendor/bin/diag_klog
-vendor/bin/diag_mdlog
-vendor/bin/diag_socket_log
-vendor/bin/diag_uart_log
-vendor/bin/test_diag
 vendor/lib/libdiag.so
 vendor/lib/libdiagjni.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdiagjni.so
-
-# Display - from  LA.UM.8.2.r1-07400-sdm660.0
-etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
--framework/com.qti.snapdragon.sdk.display.jar|495d45dd84a61e873a3d1176ab7741826e60d7f1
-lib64/libsdm-disp-apis.so|25391818f65a4dfe3fdf0603109eacc4eedc4c13
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|8bf06b86027ac6279cc4bdf9deaac45763591dee
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8ac0a0fb010f92bfa7de5981d643cf
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|841104a6d894f2afb733bb2317b70092298a8537
 
 # Display calib (OOS)
 vendor/etc/qdcm_calib_data_samsung_s6e3fa5_1080p_cmd_mode_dsi_panel.xml
@@ -650,86 +668,85 @@ vendor/lib/libdpmqmihal.so
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# DRM - from Nokia ddv_sprout(m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
--product/priv-app/seccamservice/seccamservice.apk|6bf6a5f5110f4a3552b198a626171750425d73f3
-product/lib/libsecureui_svcsock_system.so|d76880fbc9339b2591e7c962ba13f7bebfe80654
-product/lib/libsecureuisvc_jni.so|3992885f231edef629b6fb4128c3539104e9cdbe
-product/lib64/libsecureui_svcsock_system.so|b4d9a3d6ac88cf9d77c20dda9c7017ab44fe8c20
-product/lib64/libsecureuisvc_jni.so|cb479b0eefe4a8936895222c56cf9adcc83fc1fb
-vendor/bin/qseecomd|4e6d1b4071daaa67882294cc5ae4a25b3844be4e
-vendor/lib/libGPreqcancel.so|b6bd8b389e4a786f745940c443d1b048070c14ce
-vendor/lib/libGPreqcancel_svc.so|d6c8812da1c6758351216ac74eb3c174c255e7cd
-vendor/lib/libQSEEComAPI.so|be0e0f44f2229dcd170b7f669ba1ec8c0a6d34b2
-vendor/lib/libbase64.so|fbb63136ef81c0bf8a0205c00b00cb9d63726594
-vendor/lib/libcppf.so|ff3a7b6f42a27d92925a0c56200d45197e7678d4
-vendor/lib/libcpion.so|eb815cb13b2d951d980726cbdb4967884c34258c
-vendor/lib/libdrmfs.so|de40f84633345ad2d7cb4f2cf361d7d7fb8f570c
-vendor/lib/libdrmtime.so|8975fd695dee41f05d48f98474e2f88f91e6e955
-vendor/lib/liboemcrypto.so|d60a90ee579a3423319b3367aafd89edfdfb291a
-vendor/lib/libqisl.so|07cffb5a14ed0a0d8e35bd02b23d251b9372e41d
-vendor/lib/librmp.so|cbafb1527c9d6fbee4833c71e1336e29f8a12761
-vendor/lib/librpmb.so|07d64872c581b6941f64299c3c4315b191acb2fa
-vendor/lib/libSecureUILib.so|92625a3ea59a92aea7771a2be460035662048bc6
-vendor/lib/libsecureui.so|89cbd8e6f02b451c2a684628c0688c13272580ed
-vendor/lib/libsecureui_svcsock.so|28c84f2f75505d858395345a4fb238a4fe59e240
-vendor/lib/libsdedrm.so|c8e069bb766dbb5a7c1e1419e22d69197e378609
-vendor/lib/libsi.so|b7ed8b32302408c92b3fdeea6df67ad1b055c98b
-vendor/lib/libssd.so|58b1660d9df8e399f3de3ae91f6aa4600825a8d1
-vendor/lib/libStDrvInt.so|71be3ab1bf6b912777c538b047191efb37248d3b
-vendor/lib/libtzdrmgenprov.so|6a5b17fb166b22fb81690f8c6cc5f3a2c8e81eec
-vendor/lib64/libGPreqcancel.so|bfff7b7d51e917a16b9a15a27fb81e16d0359348
-vendor/lib64/libGPreqcancel_svc.so|d4216112bda75e1d3b06b679dcd8978da17dca93
-vendor/lib64/libQSEEComAPI.so|b8fb8b24be8070972b0dcca373f1928c08a783b3
-vendor/lib64/libbase64.so|aefea4f161e08c46fdb8bf63285214fc30e727f1
-vendor/lib64/libcpion.so|5141bc9fc6c3464795fc4c44998a11e407109a41
-vendor/lib64/libdrmfs.so|0c219e1b302621e93aea867bfddeb05f12500149
-vendor/lib64/libdrmtime.so|c5de0592da3645851c3a428ddbb0164228fcb4e4
-vendor/lib64/liboemcrypto.so|b854046c9a60d95e13a35c4cf291b7a0e670b7f2
-vendor/lib64/libqisl.so|c4e7f283f3d416b784f2ec0f7000d607e044809b
-vendor/lib64/librmp.so|aceae14771ff3a29824337fe5605d2a3d6572ed7
-vendor/lib64/librpmb.so|8a607240098d2786fc14868afa137f50c4dade1c
-vendor/lib64/libSecureUILib.so|54ce5c719dfdeb0896187be4cf0903bf4e6c4ba7
-vendor/lib64/libsecureui.so|a4b4b482ca046b6c9ceaf8321cad4b52ece1c5f2
-vendor/lib64/libsecureui_svcsock.so|d6b34f488754b48074d806b9057d32d82e28612a
-vendor/lib64/libsdedrm.so|35060b2f7f93b1b3ab3b190e4365d135b9c2fd44
-vendor/lib64/libsi.so|78755e9598f6874a1df4e9b057620c211839e56f
-vendor/lib64/libssd.so|d6758bd01b360be7bb68f35f56978a5e9a21d3c3
-vendor/lib64/libStDrvInt.so|8de13b46e8f21016c0fffaec34b0a2bacfccec04
-vendor/lib64/libtzdrmgenprov.so|8212647c99363bcd42795cde7c74b8be3709fac8
+# DRM
+product/lib/libGPTEE_system.qti.so
+product/lib/libQTEEConnector_system.so
+product/lib/vendor.qti.hardware.qseecom@1.0.so
+product/lib/vendor.qti.hardware.qteeconnector@1.0.so
+product/lib64/libGPTEE_system.qti.so
+product/lib64/libQTEEConnector_system.so
+product/lib64/vendor.qti.hardware.qseecom@1.0.so
+product/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+vendor/bin/hw/vendor.oneplus.hardware.drmkey@1.0-service
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+vendor/bin/qseecomd
+vendor/etc/init/vendor.oneplus.hardware.drmkey@1.0-service.rc
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib/libDrmKry.so
+vendor/lib/libGPTEE_vendor.so
+vendor/lib/libGPreqcancel.so
+vendor/lib/libGPreqcancel_svc.so
+vendor/lib/libQSEEComAPI.so
+vendor/lib/libQTEEConnector_vendor.so
+vendor/lib/libSecureUILib.so
+vendor/lib/libStDrvInt.so
+vendor/lib/libbase64.so
+vendor/lib/libcpion.so
+vendor/lib/libdrmfs.so
+vendor/lib/libdrmtime.so
+vendor/lib/liboemcrypto.so
+vendor/lib/libqisl.so
+vendor/lib/librpmb.so
+vendor/lib/libsecureui.so
+vendor/lib/libsecureui_svcsock.so
+vendor/lib/libsi.so
+vendor/lib/libspl.so
+vendor/lib/libssd.so
+vendor/lib/libtzdrmgenprov.so
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/vendor.qti.hardware.qseecom@1.0.so
+vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib64/libDrmKry.so
+vendor/lib64/libGPQTEEC_vendor.so
+vendor/lib64/libGPTEE_vendor.so
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libQTEEConnector_vendor.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libbase64.so
+vendor/lib64/libcpion.so
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/liboemcrypto.so
+vendor/lib64/libqisl.so
+vendor/lib64/librpmb.so
+vendor/lib64/libsecureui.so
+vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libsi.so
+vendor/lib64/libspl.so
+vendor/lib64/libssd.so
+vendor/lib64/libtzdrmgenprov.so
+vendor/lib64/libwms.so
+vendor/lib64/libwqe.so
+vendor/lib64/libxml.so
+vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/vendor.oneplus.hardware.drmkey@1.0.so
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# DRM - from Nokia ddv_sprout(m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
-vendor/bin/hdcp1prov|426e859e6f98dc090e90c8d9b0985747e7b806dd
-vendor/bin/hdcp2p2prov|2ee2b1c1d71ae40f3ef1043a9309673f1197021d
-vendor/lib/libhdcpsrm.so|514ea721993a0e987f779748cd15171e2474bc71
-vendor/lib/libmm-hdcpmgr.so|1369ce85b3c133c8d4d04167cd894df85212dcfa
-vendor/lib/libhdcp1prov.so|d2024472138004a7466f19f160d99d24e42be78a
-vendor/lib/libhdcp2p2prov.so|f1596368be5bbde8a0d7b85c28e103b30921e556
-vendor/lib64/libhdcpsrm.so|6119e09718f5b0099ccd8ac580dca35ae8d544bb
-vendor/lib64/libmm-hdcpmgr.so|a80b3cfa28acdb69a5047ab9592c611ab4534799
-vendor/lib64/libhdcp1prov.so|e86aec34a2e156e12b8657c586d83cbddff96c00
-vendor/lib64/libhdcp2p2prov.so|2da6e3bb38725480cf916c12e6d65d5601e2578c
-
-# DRM - from Nokia ddv_sprout(m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
-product/lib/libGPQTEEC_system.qti.so|efa7c9fd159661e244b3a28cb4002502a9ec3131
-product/lib/libGPTEE_system.qti.so|a4f5937a9474350560dfb2af9bdf93c53aeb2e62
-product/lib/libQTEEConnector_system.so|95b375d877eb83999f1999a381427ff04517ce4a
-product/lib/libseccam.so|98a2033747178be930855da820dc9cd536e5c742
-product/lib/vendor.qti.hardware.qteeconnector@1.0.so|758d505d1ec01a2c74473f655bda9d8f7227b1be
-product/lib/vendor.qti.hardware.seccam@1.0.so|79f1111d13cd8109e103795186ceaa3f3ffb5979
-product/lib64/libGPQTEEC_system.qti.so|e1dfb344f6a30d3ca99ae9098516be6ffbf3d147
-product/lib64/libGPTEE_system.qti.so|f749602276fe3360e27cad3c4d162c25a8135a22
-product/lib64/libQTEEConnector_system.so|f7e5f7962e700edb2b0a7b407db0534fde4820f4
-product/lib64/libseccam.so|cabb819213ce6594cee6efafa4ea45de1f591de9
-product/lib64/vendor.qti.hardware.qteeconnector@1.0.so|14c3569a4098f93916d27dceeda918272a7f0d53
-product/lib64/vendor.qti.hardware.seccam@1.0.so|784a071a6f1c015901ad514850283876d1ee1cf7
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|b03632420eea636c9c1585d18703340cdf5dd2fe
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|80074629c1146be23b0f76932f2aebbac6210ac6
-vendor/lib/libQTEEConnector_vendor.so|0246dd4c292fffe7802f3334da9beae42ad172e0
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so|c309a061b8b1582aaeb1995d522f2ab4c4807c36
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|d721412f01790f4b81b7a997af28aed7fa49e1eb
-vendor/lib64/libQTEEConnector_vendor.so|af84fc33a0a87d3c23d146e4658d8274d1d26805
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|b2d1f88ccd334631ea2002a5b6b5c8557201278f
+# DRM (Widevine)
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/lib/libcppf.so
+vendor/lib64/libwvhidl.so
 
 # Fingerprint sensor (OOS)
 etc/permissions/com.fingerprints.extension.xml:vendor/etc/permissions/com.fingerprints.extension.xml
@@ -746,6 +763,10 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/fp_hal_extension.so
 vendor/lib/vendor.oneplus.fingerprint.extension@1.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
+
+# Fingerprint sensor
+lib/hw/fingerprint.msm8998.so:vendor/lib/hw/fingerprint.msm8998.so
+lib64/hw/fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.msm8998.so
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.msm8998.so
@@ -838,65 +859,49 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
-# Graphics - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/lib/egl/eglSubDriverAndroid.so|e72aefcf9fa50a01f53558ea7886e2d70b3a57a9
-vendor/lib/egl/libEGL_adreno.so|4ee0c196818b5f460853f0fdea1e7c586b889c88
-vendor/lib/egl/libGLESv1_CM_adreno.so|35180cd115c1d9dcc7ed33a4add281a365d8ec9c
-vendor/lib/egl/libGLESv2_adreno.so|5ef15618453b3ef79e30d96f4be40fb680e299ee
-vendor/lib/egl/libq3dtools_adreno.so|5d25d3f8d5f5e86f6d1b83df3a15561ff257756d
-vendor/lib/egl/libq3dtools_esx.so|35ba313e7e00d40dbf0bde82a335a6f257f67a07
-vendor/lib/egl/libQTapGLES.so|62647fc17de97ffeac871a4603134b5cc659a34d
-vendor/lib/libadreno_utils.so|54eedfc81c3228ade708c4ebc8dd0cc25fcd46cf
-vendor/lib/libbccQTI.so|0be327b62b993d09953fc0758fbf19672d58d3ec
-vendor/lib/libC2D2.so|c189d8794a261824b8fdeca4e65d63eb92c0cc0a
-vendor/lib/libc2d30_bltlib.so|3ff9baf59a1e1c56b91a0f509a2dfd36c9e96be2
-vendor/lib/libCB.so|6ea18e91fa40df3ee175d3a54c6c1b523bc904be
-vendor/lib/libgsl.so|aaa872a82464283f742838908c7fd5e0ac9a74f7
-vendor/lib/libllvm-glnext.so|017017256eda565d7c2fa1b8f2b0f5e720ddb321
-vendor/lib/libllvm-qcom.so|c7af1844b19258ad6eb822fa56d0ce5fd3df232b
-vendor/lib/libOpenCL.so|6fe1ec3442653efedf49f64aa9301e0ed91abac0
-vendor/lib/librs_adreno_sha1.so|ab0bd6fe8c7e7156f95138e2ca5484b31cc19564
-vendor/lib/librs_adreno.so|11eaa78d76d9f0e5f34ce5db2b08d5039171e4c9
-vendor/lib/libRSDriver_adreno.so|5d5c9310505ab6b2a42006118e87fd8489d525d1
-vendor/lib64/egl/eglSubDriverAndroid.so|2f5f0f8dff2e5a52f5852a9dcdb844d348b934bc
-vendor/lib64/egl/libEGL_adreno.so|881af356ca2f30d993fd2a859d1ad93a704a754f
-vendor/lib64/egl/libGLESv1_CM_adreno.so|ee3604131af93e38baaf0cdff49523514cd1f1b2
-vendor/lib64/egl/libGLESv2_adreno.so|e287b01e0cc37a4f17cd53adcd4d945c56382313
-vendor/lib64/egl/libq3dtools_adreno.so|07c3b406aa055abfdb3358833d02cb5133964d37
-vendor/lib64/egl/libq3dtools_esx.so|65a22fbfb7f471cd159290c4a7cc755f1a772c6c
-vendor/lib64/egl/libQTapGLES.so|8a82cd42126f848b0fa2470dbcdcbe02585627a3
-vendor/lib64/libadreno_utils.so|7723561e4c15c8cda5639ab36c0fb80cefbad783
-vendor/lib64/libbccQTI.so|42fdea81ea505ccadbf6d24af7ba37cf83760391
-vendor/lib64/libC2D2.so|802802ac7ce0bb8bfc6918449a89ec820c6cfd53
-vendor/lib64/libc2d30_bltlib.so|efda0093baa46c8138ac98f29d417e0b72125e24
-vendor/lib64/libCB.so|7ea44a986e8307a4ec5a938bc8866591b2ee92ce
-vendor/lib64/libgsl.so|38b4efad2d4dc610b55cc3c7d7f0d99e79eba52e
-vendor/lib64/libllvm-glnext.so|3a4a045ea85877e814a9954ced7ec6baa8e04210
-vendor/lib64/libllvm-qcom.so|f405f07c443129f0a82c87b528d690e26afcbe4e
-vendor/lib64/libOpenCL.so|d6bb350254707592d6f6360c06d4c3336f8f1155
-vendor/lib64/librs_adreno_sha1.so|21fc65066acc95b047f94b52ad7f2307c062043e
-vendor/lib64/librs_adreno.so|3d0a23777e7bdd979a0c84d9da731ae15d58af68
-vendor/lib64/libRSDriver_adreno.so|b3d5f6b891f6ef0e8f079609d2722f1c29d28c8b
+# Graphics
+vendor/lib/egl/eglSubDriverAndroid.so
+vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so
+vendor/lib/egl/libQTapGLES.so
+vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/hw/vulkan.msm8998.so
+vendor/lib/libC2D2.so
+vendor/lib/libCB.so
+vendor/lib/libOpenCL.so
+vendor/lib/libRSDriver_adreno.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libbccQTI.so
+vendor/lib/libc2d30_bltlib.so
+vendor/lib/libgsl.so
+vendor/lib/libllvm-glnext.so
+vendor/lib/libllvm-qcom.so
+vendor/lib/librs_adreno.so
+vendor/lib/librs_adreno_sha1.so
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/egl/libEGL_adreno.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so
+vendor/lib64/egl/libGLESv2_adreno.so
+vendor/lib64/egl/libQTapGLES.so
+vendor/lib64/egl/libq3dtools_adreno.so
+vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/hw/vulkan.msm8998.so
+vendor/lib64/libC2D2.so
+vendor/lib64/libCB.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libRSDriver_adreno.so
+vendor/lib64/libadreno_utils.so
+vendor/lib64/libbccQTI.so
+vendor/lib64/libc2d30_bltlib.so
+vendor/lib64/libgsl.so
+vendor/lib64/libllvm-glnext.so
+vendor/lib64/libllvm-qcom.so
+vendor/lib64/librs_adreno.so
+vendor/lib64/librs_adreno_sha1.so
 
-# Graphics (HDR) - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/lib/libhdr_tm.so|0104cdb2789ab1fb54b6b93564300f13ffeefc39
-vendor/lib64/libhdr_tm.so|0744584d9e30a921898695c89e96293901437c08
-
-# Graphics (SDM) - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/lib/libqseed3.so|44f99b99b831227491e320a3098c8defe8df0781
-vendor/lib/libsdm-color.so|05e6eedb8f9656d9097a1c3cee09ceeef1025181
-vendor/lib/libsdm-diag.so|f560622d31fa58c6b3ee2843d7485ddfd246d064
-vendor/lib/libsdm-disp-vndapis.so|bad84544313a5bdf5d0171e685c493dbe1fd72d4
-vendor/lib/libsdmextension.so|96d271f9a88674b2b3591cea0baeb00ad9d07dfd
-vendor/lib/libtinyxml2_1.so|89e1b1af10209dbb8d341cd314750cc64fc33852
-vendor/lib64/libqseed3.so|6779aaf96283e244122f4cc76cd3cb750ff14ed5
-vendor/lib64/libsdm-color.so|9c80ac4e059bff1c53814e9f5f71a5fbe38bce40
-vendor/lib64/libsdm-diag.so|35206a3a9b7ed56317511bb72f89fd380d848ca6
-vendor/lib64/libsdmextension.so|12db81d966193faa178260f09d660b9e267c883b
-vendor/lib64/libsdm-disp-vndapis.so|a4e271a373b83b1e04afdbff63ab37154aead5f9
-vendor/lib64/libtinyxml2_1.so|70942325afdd14eedcf11b3fbbfbc3d98f42f8dc
-
-# Graphics firmware (OOS)
+# Graphics firmware
 vendor/firmware/a225p5_pm4.fw
 vendor/firmware/a225_pfp.fw
 vendor/firmware/a225_pm4.fw
@@ -930,24 +935,41 @@ vendor/firmware/a630_sqe.fw
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 
-# Improvetouch (OOS)
-vendor/bin/hbtp_daemon
-vendor/etc/hbtp/hbtpcfg2.dat
-vendor/etc/hbtp/hbtpcfg.dat
-vendor/etc/hbtp/loader.cfg
-vendor/etc/hbtp/qtc800h_8998_660.bin
-vendor/etc/hbtp/qtc800h.bin
-vendor/etc/hbtp/qtc800s_dsp.bin
-vendor/lib64/libhbtpclient.so
-vendor/lib64/libhbtpdsp.so
-vendor/lib64/libhbtpfrmwk.so
-vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
-vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
-vendor/lib/libhbtpclient.so
-vendor/lib/libhbtpfrmwk.so
-vendor/lib/libhbtpdsp.so
-vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
-vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so
+# Graphics - DRM
+vendor/lib/libsdedrm.so
+vendor/lib64/libsdedrm.so
+
+# Graphics - HDR
+vendor/lib/libhdr_tm.so
+vendor/lib64/libhdr_tm.so
+
+# Graphics - SDM
+vendor/bin/hw/vendor.display.color@1.0-service
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
+vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
+vendor/lib/libqseed3.so
+vendor/lib/libsdm-color.so
+vendor/lib/libsdm-diag.so
+-vendor/lib/libsdm-disp-vndapis.so
+vendor/lib/libsdmextension.so
+vendor/lib/libtinyxml2_1.so
+vendor/lib/vendor.display.color@1.0.so
+vendor/lib/vendor.display.color@1.1.so
+vendor/lib/vendor.display.color@1.2.so
+vendor/lib/vendor.display.postproc@1.0.so
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
+vendor/lib64/libqseed3.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-diag.so
+-vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtinyxml2_1.so
+vendor/lib64/vendor.display.color@1.0.so
+vendor/lib64/vendor.display.color@1.1.so
+vendor/lib64/vendor.display.color@1.2.so
+vendor/lib64/vendor.display.postproc@1.0.so
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # IMS - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/ims_rtp_daemon
@@ -1022,13 +1044,15 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 
-# Keymaster - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/lib/libkeymasterdeviceutils.so|df3946ad31bfd7b0837376d6740b8b0f3ede588d
-vendor/lib/libkeymasterprovision.so|c9171be0c536346f8339fa466cdd0f05546a18b9
-vendor/lib/libkeymasterutils.so|7e07fa18fba352165c5e8e0169175c5f7d3088a8
-vendor/lib64/libkeymasterdeviceutils.so|ea44915adfee57f1bd813b2184987565d396ab82
-vendor/lib64/libkeymasterprovision.so|25505bda86672a5ae31f75b8f8af0a3560ef648f
-vendor/lib64/libkeymasterutils.so|2791994395cd10eb1092b8bd8fea15987e17421d
+# Keymaster
+vendor/lib/libkeymasterdeviceutils.so
+vendor/lib/libkeymasterprovision.so
+vendor/lib/libkeymasterutils.so
+vendor/lib/libqtikeymaster4.so
+vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so
+vendor/lib64/libqtikeymaster4.so
 
 # Keystore
 vendor/lib/hw/keystore.msm8998.so
@@ -1038,51 +1062,79 @@ vendor/lib64/hw/keystore.msm8998.so
 vendor/lib/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 
-# Listen - OOS
+# Listen
+lib/liblistenjni.so:vendor/lib/liblistenjni.so
+lib/liblistensoundmodel2.so:vendor/lib/liblistensoundmodel2.so
 vendor/lib/hw/sound_trigger.primary.msm8998.so
 vendor/lib/libadpcmdec.so
+vendor/lib/libmulawdec.so
+vendor/lib/libsmwrapper.so
+
+# Media
+product/lib/vendor.qti.hardware.vpp@1.1.so
+product/lib/vendor.qti.hardware.vpp@1.2.so
+product/lib64/vendor.qti.hardware.vpp@1.1.so
+product/lib64/vendor.qti.hardware.vpp@1.2.so
+vendor/lib/libAlacSwDec.so
+vendor/lib/libApeSwDec.so
+vendor/lib/libFlacSwDec.so
+vendor/lib/libI420colorconvert.so
+vendor/lib/libOmxAacDec.so
+vendor/lib/libOmxAlacDec.so
+vendor/lib/libOmxAlacDecSw.so
+vendor/lib/libOmxAmrDec.so
+vendor/lib/libOmxAmrwbplusDec.so
+vendor/lib/libOmxApeDec.so
+vendor/lib/libOmxApeDecSw.so
+vendor/lib/libOmxDsdDec.so
+vendor/lib/libOmxEvrcDec.so
+vendor/lib/libOmxG711Dec.so
+vendor/lib/libOmxQcelp13Dec.so
+vendor/lib/libOmxVideoDSMode.so
+vendor/lib/libOmxVpp.so
+vendor/lib/libOmxWmaDec.so
+vendor/lib/libdsd2pcm.so
+vendor/lib/libgpustats.so
+vendor/lib/libmm-color-convertor.so
+vendor/lib/libvpphvx.so
+vendor/lib/libvpplibrary.so
+vendor/lib/libvqzip.so
+vendor/lib/vendor.qti.hardware.vpp@1.1.so
+vendor/lib/vendor.qti.hardware.vpp@1.2.so
+vendor/lib64/libAlacSwDec.so
+vendor/lib64/libApeSwDec.so
+vendor/lib64/libFlacSwDec.so
+vendor/lib64/libI420colorconvert.so
+vendor/lib64/libOmxAacDec.so
+vendor/lib64/libOmxAlacDec.so
+vendor/lib64/libOmxAlacDecSw.so
+vendor/lib64/libOmxAmrDec.so
+vendor/lib64/libOmxAmrwbplusDec.so
+vendor/lib64/libOmxApeDec.so
+vendor/lib64/libOmxApeDecSw.so
+vendor/lib64/libOmxEvrcDec.so
+vendor/lib64/libOmxG711Dec.so
+vendor/lib64/libOmxQcelp13Dec.so
+vendor/lib64/libOmxVpp.so
+vendor/lib64/libOmxWmaDec.so
+vendor/lib64/libgpustats.so
+vendor/lib64/libmm-color-convertor.so
+vendor/lib64/libstagefright_soft_qtiflacdec.so
+vendor/lib64/libvpphvx.so
+vendor/lib64/libvpplibrary.so
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so
+
+# Misc
+vendor/etc/graphite_ipc_platform_info.xml
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
-vendor/lib/libsmwrapper.so
-
-# Media - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/lib/libAlacSwDec.so|d082d6eeedd8a84bd1b720d515ede48e74392dd4
-vendor/lib/libApeSwDec.so|12c5bfd798a14114a58e55c0713e8e238ccbb83f
-vendor/lib/libFlacSwDec.so|ad62260c534b60df028f5c5741086592aad7e220
-vendor/lib/libI420colorconvert.so|3aa40a7c120ddd7850c98f20e312fc67cec34507
-vendor/lib/libmm-color-convertor.so|650a2ac25ff610a9472d145d82ffbf7fb00bd17b
-vendor/lib/libOmxAacDec.so|08ab281625ecadee2f0c387149f843fcd7b2a5df
-vendor/lib/libOmxAlacDec.so|3f0c5c0ac49fed7922b55f0a94b9acccda4702b1
-vendor/lib/libOmxAlacDecSw.so|6bec19c7c1cac2036480b04e3fb998f473433e08
-vendor/lib/libOmxAmrDec.so|25012de558cb8bfb217f53fefae173751e5286a1
-vendor/lib/libOmxAmrwbplusDec.so|82c0454bf7b9b5a6e7fe426ea9711f5730d551b8
-vendor/lib/libOmxApeDec.so|84350471bfe3ac5b05a6e0ec4dad67a9fc97d9d2
-vendor/lib/libOmxApeDecSw.so|515cba101287c9a753b32cb29f415c0b48abeed9
-vendor/lib/libOmxDsdDec.so|1793f853c171f2317187df2cebefe07d17417c3d
-vendor/lib/libOmxEvrcDec.so|0f67c5690e4b761a8ddade3c3e35b24e37682463
-vendor/lib/libOmxG711Dec.so|de0d8b8aae70de89c351ab8b706592abfe9847d0
-vendor/lib/libOmxQcelp13Dec.so|7b68992a36e0c6e0bdc288359bdb8f950cec34ef
-vendor/lib/libOmxVideoDSMode.so|4f79da4dd209c27c94c9a0e196ba73cfac85a13d
-vendor/lib/libOmxWmaDec.so|e1f2c2ed81495296f7c0146be5bf0e2530e44317
-vendor/lib/libvqzip.so|224d6ed62e52b470d9821b99e59c0857609870a5
-vendor/lib64/libAlacSwDec.so|6e0e351d24c3b7b848f2923cf7d69d3e63ec9800
-vendor/lib64/libApeSwDec.so|c6853b37276ab4d26956d54e477b801f10216693
-vendor/lib64/libFlacSwDec.so|ed4d15211dcdb839acc0effc0c450ad549ad659d
-vendor/lib64/libI420colorconvert.so|d454d596918ca313ce11159b63f40e98a35f4f01
-vendor/lib64/libmm-color-convertor.so|6cd70ba35581b6e16b1a48d0139a6e2c5d6e35fa
-vendor/lib64/libOmxAacDec.so|bbc92bee08c6e78189932faaaac47a4ebd6083a1
-vendor/lib64/libOmxAlacDec.so|c844e689c624b592b1617bc73014438a77d9f7bc
-vendor/lib64/libOmxAlacDecSw.so|a6dfca665cfddf529ba89ff982cc88eb70d9a2b8
-vendor/lib64/libOmxAmrDec.so|0008dfa2008b6387a67442329ac0b2b249a80543
-vendor/lib64/libOmxAmrwbplusDec.so|2b7dfa4a182c1a379282b0d39868a3209d78b07c
-vendor/lib64/libOmxApeDec.so|eb7f51ffe2dccf8e4deb8818d1a72d71036d3a50
-vendor/lib64/libOmxApeDecSw.so|22ea70b7a4f7eed4e399f8b85a73be6859e247f3
-vendor/lib64/libOmxEvrcDec.so|638f432a9de04c7195f1b62d9cf6c9de4314d182
-vendor/lib64/libOmxG711Dec.so|0a94e28f0b70e2bd8924f5aecc926ccb4a8a49e9
-vendor/lib64/libOmxQcelp13Dec.so|d8bb8a5c999a2f2e3a7e717d422ab43c90ab9028
-vendor/lib64/libOmxWmaDec.so|8f8ef46403b739859f97f1fe54dff8c30b57cebb
+vendor/lib64/libgcs-calwrapper.so
+vendor/lib64/libgcs-ipc.so
+vendor/lib64/libgcs-osal.so
+vendor/lib64/libgcs.so
 
 # MMI - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
@@ -1160,24 +1212,23 @@ vendor/lib64/vendor.qti.hardware.perf@2.0.so
 vendor/lib64/vendor.qti.hardware.perf@2.1.so
 vendor/lib64/vendor.qti.hardware.perf@2.2.so
 
-# Performance - (Stock OOS)
-vendor/etc/powerhint.xml
+# Peripheral manager
+vendor/bin/pm-proxy
+vendor/bin/pm-service
+vendor/lib/libperipheral_client.so
+vendor/lib64/libperipheral_client.so
 
-# Peripheral manager - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/bin/pm-proxy|3182c937d93cc02c6721c053f57fc6794ad7edb3
-vendor/bin/pm-service|d41dabf5e4830f93b267d668d37e72aedae48163
-vendor/lib/libperipheral_client.so|6a95436d0d649fff0a48a4662a0781330e723ae1
-vendor/lib64/libperipheral_client.so|18796ea27c31bd39946f23f2b4173bafd26d9216
-
-# Postprocessing - from LA.UM.8.2.r1-06700-sdm660.0
-vendor/bin/hw/vendor.display.color@1.0-service|e8c561e3a169c3007b117515f2946f23a195a5e5
-vendor/bin/mm-pp-dpps|27ed9e9a5f6c4f547c15e396053f283211f65abb
-vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib64/libdisp-aba.so|edf0d57d523b5d578263a19358e1f57f8c7bbfd1
-vendor/lib64/vendor.display.color@1.0.so|c7eb0d87e45934ad7ff34d0c977116ed46091865
-vendor/lib64/vendor.display.color@1.1.so|d2dfc3fff6aaf7989110ebe05af154186e535010
-vendor/lib64/vendor.display.color@1.2.so|7b967425caa1205e331484e1e1484ac3bd355067
-vendor/lib64/vendor.display.postproc@1.0.so|c9c96ff50b6ff8989fac9fdf35d282a996ea477a
+# Postprocessing
+etc/permissions/com.qti.snapdragon.sdk.display.xml
+framework/com.qti.snapdragon.sdk.display.jar
+vendor/bin/hw/vendor.display.color@1.0-service
+vendor/bin/mm-pp-dpps
+vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib64/libdisp-aba.so
+vendor/lib64/vendor.display.color@1.0.so
+vendor/lib64/vendor.display.color@1.1.so
+vendor/lib64/vendor.display.color@1.2.so
+vendor/lib64/vendor.display.postproc@1.0.so
 
 # Power-off alarm - LA.UM.9.11.r1-02600-NICOBAR.0
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
@@ -1363,13 +1414,22 @@ vendor/lib64/libminkdescriptor.so
 vendor/lib64/libnative-api.so
 vendor/lib64/libqcbor.so
 
-# Sensors - OOS
+# Sensors
+lib/libqmi_cci_system.so
+lib/libsdsprpc_system.so
+lib/libsensor1.so
+lib/libsensor_reg_system.so
+lib64/libqmi_cci_system.so
+lib64/libsdsprpc_system.so
+lib64/libsensor1.so
+lib64/libsensor_reg_system.so
 product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/sensors.qti
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:product/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
 vendor/etc/sensors/hals.conf
+vendor/etc/sensors/sensor_def_qcomdev.conf
 vendor/lib/hw/activity_recognition.msm8998.so
 vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib/libsensor1.so
@@ -1389,9 +1449,11 @@ vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
-# Sensors (OOS)
-vendor/etc/sensors/hals.conf
-vendor/etc/sensors/sensor_def_qcomdev.conf
+# Snapdragon Computer Vision Engine
+product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
+product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:vendor/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
+vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
+vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
 # SS Restart - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/ssr_diag
@@ -1429,22 +1491,19 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|1f27eb012650705a40fac8fec6d0b2dd10a1ec22
 vendor/lib64/vendor.qti.hardware.soter@1.0.so|59f1fa3e2e53b755c95e45cb2364bf683ac37cdb
 
-# Thermal - from LA.UM.8.2.r1-07400-sdm660.0
-vendor/bin/thermal-engine|ca43d430181339bd02cddc771584b0e4e1846c0b
-vendor/lib/libthermalclient.so|34b6ee056ae8a6df578fc243f8acd3567a49d97b
-vendor/lib64/libthermalclient.so|20f1fd238fc81bf1c6828ec416121c0ef66e0df1
-vendor/lib64/libthermalioctl.so|e1844c66a556946b45bcb6c2e747460aa5201770
-
-# Thermal COnfig - Stock
+# Thermal
+vendor/bin/thermal-engine
 vendor/etc/thermal-engine.conf
+-vendor/lib/libthermalclient.so
+-vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalioctl.so
 
-# Time services - from LA.UM.8.2.r1-07400-sdm660.0
--vendor/app/TimeService/TimeService.apk|c935b678fdaed033513f044f6492361c3370f9f0
-vendor/bin/time_daemon|a213fb73b9b1cbbdb631851a337ffd64ae08367e
-vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
-vendor/lib64/libtime_genoff.so|216cbb72e22a0ca76d766dc0b84055c5b31e0a4c
+# Time services
+-vendor/app/TimeService/TimeService.apk
+vendor/bin/time_daemon
+-vendor/lib64/libtime_genoff.so
 
-# Wi-Fi Display - OOS
+# Wi-Fi Display
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
 vendor/bin/wifidisplayhalservice
@@ -1469,10 +1528,3 @@ vendor/lib64/libhdmipassthru.so
 vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmmosal_proprietary.so
 vendor/lib64/libwfdhdcpcp.so
-
-# DRM (Widevine) - from Nokia ddv_sprout(m690-user 10 QKQ1.191014.001 00WW_2_250 release-keys)
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine|31901223513e3748c761d6f721ac09e860e648a8
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|fd9628b1fc24a5bc6cd69d1075538bbc0924416e
-vendor/lib/mediadrm/libwvdrmengine.so|3368c515821e1a27db9948782122c80c952d3dd6
-vendor/lib64/mediadrm/libwvdrmengine.so|c68c6dcbb46344d530884dc3d8f363d5a3514ee6
-vendor/lib64/libwvhidl.so|669e23b5e819e9949bae6ff7f5c652bd713c6b97
