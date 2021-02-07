@@ -191,6 +191,11 @@ on charger
 #    start qrngp
 #
 
+service vendor.qseecomd /vendor/bin/qseecomd
+   class core
+   user root
+   group root
+
 service vendor.spdaemon /vendor/bin/spdaemon
    class core
    user system

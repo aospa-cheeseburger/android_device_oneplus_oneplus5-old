@@ -1,34 +1,23 @@
 #!/bin/bash
-
-# Copyright (C) 2020 The LineageOS Project
-#               2020 Paranoid Android
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+# SPDX-License-Identifier: Apache-2.0
 #
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
 
 set -e
 
 DEVICE=oneplus5
 VENDOR=oneplus
 
-INITIAL_COPYRIGHT_YEAR=2020
-
 # Load extract utilities and do some sanity checks.
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-ROOT="${MY_DIR}/.."
+ANDROID_ROOT="${MY_DIR}/.."
 
-HELPER="${ROOT}/extract_utils.sh"
+HELPER="${ANDROID_ROOT}/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -36,14 +25,16 @@ fi
 source "${HELPER}"
 
 # Initialize the helper.
-setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 
-# Copyright headers and guards.
+# Warning headers and guards.
 write_headers
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
 cat << EOF >> "$ANDROIDMK"
+\$(shell mkdir -p \$(TARGET_OUT_VENDOR)/lib/egl && pushd \$(TARGET_OUT_VENDOR)/lib > /dev/null && ln -sf egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
+\$(shell mkdir -p \$(TARGET_OUT_VENDOR)/lib64/egl && pushd \$(TARGET_OUT_VENDOR)/lib64 > /dev/null && ln -sf egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
 EOF
 
 # Finish

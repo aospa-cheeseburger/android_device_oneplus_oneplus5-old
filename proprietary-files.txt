@@ -143,7 +143,6 @@ vendor/etc/camera/imx350_chromatix.xml
 vendor/etc/camera/imx371_chromatix.xml
 vendor/etc/camera/imx376k_chromatix.xml
 vendor/etc/camera/imx398_chromatix.xml
-vendor/etc/camera/license.lic
 vendor/etc/scve/facereco/gModel.dat
 vendor/lib/libDeVIS.so
 vendor/lib/libEIS.so
@@ -277,11 +276,6 @@ vendor/lib64/libvideoutils.so
 
 # Camera
 vendor/etc/camera/imx398_chromatix.xml
-vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so
-vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so
-vendor/lib/libchromatix_imx398_3a_wechat_preview.so
-vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so
-vendor/lib/libchromatix_imx398_preview_1080p_cpp.so
 vendor/lib/libmmcamera_imx398.so
 vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
