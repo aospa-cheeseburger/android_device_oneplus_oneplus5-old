@@ -54,7 +54,7 @@ TARGET_HW_DISK_ENCRYPTION := true
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=2048 androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3 loop.max_part=7
 #BOARD_KERNEL_CMDLINE += ro root=/dev/sde21 rootwait skip_initramfs init=/init
-#BOARD_KERNEL_CMDLINE += dm=\"system none ro,0 1 android-verity /dev/sde21ß\"
+#BOARD_KERNEL_CMDLINE += dm=\"system none ro,0 1 android-verity /dev/sde21\"
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -121,9 +121,6 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# RIL
-TARGET_USES_OLD_MNC_FORMAT := true
-
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
@@ -132,6 +129,9 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION := current
+
+# WiFi
+WIFI_DRIVER_DEFAULT := qca_cld3
 
 # Vendor
 -include vendor/oneplus/oneplus5/BoardConfigVendor.mk

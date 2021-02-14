@@ -662,86 +662,6 @@ vendor/lib/libdpmqmihal.so
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# DRM
-product/lib/libGPTEE_system.qti.so
-product/lib/libQTEEConnector_system.so
-product/lib/vendor.qti.hardware.qseecom@1.0.so
-product/lib/vendor.qti.hardware.qteeconnector@1.0.so
-product/lib64/libGPTEE_system.qti.so
-product/lib64/libQTEEConnector_system.so
-product/lib64/vendor.qti.hardware.qseecom@1.0.so
-product/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-vendor/bin/hw/vendor.oneplus.hardware.drmkey@1.0-service
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/bin/qseecomd
-vendor/etc/init/vendor.oneplus.hardware.drmkey@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/libDrmKry.so
-vendor/lib/libGPTEE_vendor.so
-vendor/lib/libGPreqcancel.so
-vendor/lib/libGPreqcancel_svc.so
-vendor/lib/libQSEEComAPI.so
-vendor/lib/libQTEEConnector_vendor.so
-vendor/lib/libSecureUILib.so
-vendor/lib/libStDrvInt.so
-vendor/lib/libbase64.so
-vendor/lib/libcpion.so
-vendor/lib/libdrmfs.so
-vendor/lib/libdrmtime.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libqisl.so
-vendor/lib/librpmb.so
-vendor/lib/libsecureui.so
-vendor/lib/libsecureui_svcsock.so
-vendor/lib/libsi.so
-vendor/lib/libspl.so
-vendor/lib/libssd.so
-vendor/lib/libtzdrmgenprov.so
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/vendor.qti.hardware.qseecom@1.0.so
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libDrmKry.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libbase64.so
-vendor/lib64/libcpion.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/liboemcrypto.so
-vendor/lib64/libqisl.so
-vendor/lib64/librpmb.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libsi.so
-vendor/lib64/libspl.so
-vendor/lib64/libssd.so
-vendor/lib64/libtzdrmgenprov.so
-vendor/lib64/libwms.so
-vendor/lib64/libwqe.so
-vendor/lib64/libxml.so
-vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/vendor.oneplus.hardware.drmkey@1.0.so
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-
-# DRM (Widevine)
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-vendor/lib/libcppf.so
-vendor/lib64/libwvhidl.so
-
 # Fingerprint sensor (OOS)
 etc/permissions/com.fingerprints.extension.xml:vendor/etc/permissions/com.fingerprints.extension.xml
 framework/vendor.oneplus.fingerprint.extension-V1.0-java.jar
@@ -761,10 +681,6 @@ vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 # Fingerprint sensor
 lib/hw/fingerprint.msm8998.so:vendor/lib/hw/fingerprint.msm8998.so
 lib64/hw/fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.msm8998.so
-
-# Gatekeeper
-vendor/lib/hw/gatekeeper.msm8998.so
-vendor/lib64/hw/gatekeeper.msm8998.so
 
 # GPS - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/garden_app
@@ -1047,10 +963,6 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
-
-# Keystore
-vendor/lib/hw/keystore.msm8998.so
-vendor/lib64/hw/keystore.msm8998.so
 
 # Latency - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/lib/vendor.qti.hardware.data.latency@1.0.so
@@ -1389,6 +1301,20 @@ vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
 
+# QSEECOM - LA.UM.8.2.r1-06700-sdm660
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
+vendor/bin/qseecomd
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/librpmb.so
+vendor/lib64/libssd.so
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
+
 # Radio - MBN (OOS)
 etc/firmware/mbn_ota/mbn_ota.txt:vendor/firmware/mbn_ota/mbn_ota.txt
 etc/firmware/tp/fw_synaptics_17801.img
@@ -1456,6 +1382,15 @@ vendor/bin/subsystem_ramdump
 vendor/lib/libsubsystem_control.so
 vendor/lib64/libsubsystem_control.so
 
+# SecureMSM (QTEE)
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
+vendor/lib64/libGPQTEEC_vendor.so
+vendor/lib64/libGPTEE_vendor.so
+vendor/lib64/libQTEEConnector_vendor.so
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+
 # SecureMSM (GPQESE) - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
@@ -1470,13 +1405,35 @@ vendor/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
+# SecureMSM (SECDISP) - LA.UM.8.2.r1-07400-sdm660.0
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libTouchInputVM.so
+vendor/lib64/libTrustedInput.so
+vendor/lib64/libTrustedInputTZ.so
+vendor/lib64/libTrustedUITZ.so
+vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libsecureui.so
+vendor/lib64/libsi.so
+
 # SecureMSM (TUI) - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# Soter - from LA.UM.8.2.r1-07400-sdm660.0
+# SecureMSM - LA.UM.8.2.r1-07400-sdm660.0
+vendor/bin/KmInstallKeybox
+vendor/bin/StoreKeybox
+vendor/lib64/libbase64.so
+vendor/lib64/libcpion.so
+vendor/lib64/liboemcrypto.so
+vendor/lib64/libpvr.so
+vendor/lib64/librmp.so
+vendor/lib64/libqisl.so
+vendor/lib64/libtzdrmgenprov.so
+
+# Soter - LA.UM.8.2.r1-07400-sdm660.0
 product/framework/vendor.qti.hardware.soter-V1.0-java.jar|e0a20a638cac4e369a29157ea4aa44b1e5d60f8f
 product/lib64/vendor.qti.hardware.soter@1.0.so|2c821316e61ecf506297c1f71cc2c1e9a960acb8
 vendor/bin/vendor.qti.hardware.soter@1.0-provision|ebbcfadcc416efd96cddb63068c6053d9730b21d
@@ -1522,3 +1479,10 @@ vendor/lib64/libhdmipassthru.so
 vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmmosal_proprietary.so
 vendor/lib64/libwfdhdcpcp.so
+
+# Widevine - OOS OP8
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|5aa424e97e92659be37cb2dad0de363aa6ef857f
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/lib64/mediadrm/libwvdrmengine.so|ba68955bfe7ecb950426a1607a472fa381740c6b
+vendor/lib64/libwvhidl.so|232637b49d6035f3a3eeae4d133c56388ad37b27
