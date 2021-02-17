@@ -136,14 +136,28 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
-# Camera
-framework/com.qualcomm.qti.camera.jar
+# Camera - OOS
+vendor/bin/mm-qcamera-daemon
+vendor/bin/hw/vendor.oneplus.camera.CameraHIDL@1.0-service
+vendor/etc/camera/ashdr/iso617_4608x3456.ncf
+vendor/etc/camera/ashdr/ncf_pack_imx371.ncf
+vendor/etc/camera/ashdr/ncf_pack_imx519.ncf
+vendor/etc/camera/ashdr/ncf_pack.ncf
+vendor/etc/camera/attribute.model
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/imx350_chromatix.xml
 vendor/etc/camera/imx371_chromatix.xml
 vendor/etc/camera/imx376k_chromatix.xml
 vendor/etc/camera/imx398_chromatix.xml
-vendor/etc/scve/facereco/gModel.dat
+vendor/etc/init/vendor.oneplus.camera.CameraHIDL@1.0-service.rc
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
+vendor/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
+vendor/lib/rfsa/adsp/libdepthmap_skel.so
+vendor/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so
+vendor/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so
+vendor/lib/rfsa/adsp/libthread_blur_skel.so
+vendor/lib/hw/camera.msm8998.so
 vendor/lib/libDeVIS.so
 vendor/lib/libEIS.so
 vendor/lib/libOGLManager.so
@@ -167,45 +181,97 @@ vendor/lib/libarcsoft_smart_denoise.so
 vendor/lib/libblur_channel.so
 vendor/lib/libcamera_oneplus_bokeh_wrapper.so
 vendor/lib/libcvface_api.so
+vendor/lib/libactuator_lc898217xc_imx350.so
+vendor/lib/libactuator_lc898217xc_imx376k.so
+vendor/lib/libactuator_lc898217xc_imx398.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libmm-qcamera.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
-vendor/lib/libmmcamera2_is.so
+vendor/lib/libmmcamera2_iface_modules.so
+vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera2_isp_modules.so
+vendor/lib/libmmcamera2_is.so
 vendor/lib/libmmcamera2_mct_shimlayer.so
+vendor/lib/libmmcamera2_mct.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
+vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_lib.so
+vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dummyalgo.so
 vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
-vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
+vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_hvx_add_constant.so
 vendor/lib/libmmcamera_hvx_grid_sum.so
-vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
-vendor/lib/libmmcamera_imx350.so
+vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imx350_gt24c64ass_eeprom.so
+vendor/lib/libmmcamera_imx350.so
 vendor/lib/libmmcamera_imx371.so
-vendor/lib/libmmcamera_imx376k.so
 vendor/lib/libmmcamera_imx376k_gt24c64_eeprom.so
+vendor/lib/libmmcamera_imx376k.so
 vendor/lib/libmmcamera_imx398_gt24c64_eeprom.so
+vendor/lib/libmmcamera_imx398.so
 vendor/lib/libmmcamera_interface.so
+vendor/lib/libmmcamera_isp_abf48.so
+vendor/lib/libmmcamera_isp_aec_bg_stats47.so
+vendor/lib/libmmcamera_isp_bf_stats47.so
+vendor/lib/libmmcamera_isp_bg_stats46.so
+vendor/lib/libmmcamera_isp_bhist_stats44.so
+vendor/lib/libmmcamera_isp_black_level48.so
+vendor/lib/libmmcamera_isp_bpc48.so
+vendor/lib/libmmcamera_isp_cac47.so
+vendor/lib/libmmcamera_isp_chroma_enhan40.so
+vendor/lib/libmmcamera_isp_chroma_suppress40.so
+vendor/lib/libmmcamera_isp_clamp_encoder40.so
+vendor/lib/libmmcamera_isp_clamp_video40.so
+vendor/lib/libmmcamera_isp_clamp_viewfinder40.so
+vendor/lib/libmmcamera_isp_color_correct46.so
+vendor/lib/libmmcamera_isp_color_xform_encoder46.so
+vendor/lib/libmmcamera_isp_color_xform_video46.so
+vendor/lib/libmmcamera_isp_color_xform_viewfinder46.so
+vendor/lib/libmmcamera_isp_cs_stats46.so
+vendor/lib/libmmcamera_isp_demosaic48.so
+vendor/lib/libmmcamera_isp_demux48.so
+vendor/lib/libmmcamera_isp_fovcrop_encoder46.so
+vendor/lib/libmmcamera_isp_fovcrop_video46.so
+vendor/lib/libmmcamera_isp_fovcrop_viewfinder46.so
+vendor/lib/libmmcamera_isp_gamma44.so
+vendor/lib/libmmcamera_isp_gic48.so
+vendor/lib/libmmcamera_isp_gtm46.so
+vendor/lib/libmmcamera_isp_hdr48.so
+vendor/lib/libmmcamera_isp_hdr_be_stats46.so
+vendor/lib/libmmcamera_isp_hdr_bhist_stats44.so
+vendor/lib/libmmcamera_isp_ihist_stats46.so
+vendor/lib/libmmcamera_isp_linearization40.so
+vendor/lib/libmmcamera_isp_ltm47.so
+vendor/lib/libmmcamera_isp_luma_adaptation40.so
+vendor/lib/libmmcamera_isp_mce40.so
+vendor/lib/libmmcamera_isp_mesh_rolloff44.so
+vendor/lib/libmmcamera_isp_pdaf48.so
+vendor/lib/libmmcamera_isp_pedestal_correct46.so
+vendor/lib/libmmcamera_isp_rs_stats46.so
+vendor/lib/libmmcamera_isp_scaler_encoder46.so
+vendor/lib/libmmcamera_isp_scaler_video46.so
+vendor/lib/libmmcamera_isp_scaler_viewfinder46.so
+vendor/lib/libmmcamera_isp_sce40.so
+vendor/lib/libmmcamera_isp_snr47.so
+vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libmmcamera_paaf_lib.so
-vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
+vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_s5k3p8sp_m24c64s_eeprom.so
@@ -215,10 +281,10 @@ vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
-vendor/lib/libmmjpeg.so
+vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmjpeg_interface.so
+vendor/lib/libmmjpeg.so
 vendor/lib/libmmlib2d_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
@@ -228,18 +294,6 @@ vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
-vendor/lib/libscveBlobDescriptor.so
-vendor/lib/libscveBlobDescriptor_stub.so
-vendor/lib/libscveCommon.so
-vendor/lib/libscveCommon_stub.so
-vendor/lib/libscveFaceLandmarks.so
-vendor/lib/libscveFaceRecognition.so
-vendor/lib/libscveObjectSegmentation.so
-vendor/lib/libscveObjectSegmentation_stub.so
-vendor/lib/libscveObjectTracker.so
-vendor/lib/libscveObjectTracker_stub.so
-vendor/lib/libscvePanorama.so
-vendor/lib/libscvePanorama_lite.so
 vendor/lib/libseemore.so
 vendor/lib/libstblur_capture_api.so
 vendor/lib/libthread_blur.so
@@ -259,35 +313,8 @@ vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib64/libscveBlobDescriptor.so
-vendor/lib64/libscveBlobDescriptor_stub.so
-vendor/lib64/libscveCommon.so
-vendor/lib64/libscveCommon_stub.so
-vendor/lib64/libscveFaceLandmarks.so
-vendor/lib64/libscveFaceRecognition.so
-vendor/lib64/libscveObjectSegmentation.so
-vendor/lib64/libscveObjectSegmentation_stub.so
-vendor/lib64/libscveObjectTracker.so
-vendor/lib64/libscveObjectTracker_stub.so
-vendor/lib64/libscvePanorama.so
-vendor/lib64/libscvePanorama_lite.so
 vendor/lib64/libseemore.so
 vendor/lib64/libvideoutils.so
-
-# Camera
-vendor/etc/camera/imx398_chromatix.xml
-vendor/lib/libmmcamera_imx398.so
-vendor/lib/libmmcamera2_iface_modules.so
-vendor/lib/libmmcamera2_imglib_modules.so
-vendor/lib/libmmcamera2_mct.so
-vendor/lib/libmmcamera2_sensor_modules.so
-vendor/lib/libmmcamera2_stats_modules.so
-vendor/lib/hw/camera.msm8998.so
-
-# Camera actuators
-vendor/lib/libactuator_lc898217xc_imx350.so
-vendor/lib/libactuator_lc898217xc_imx376k.so
-vendor/lib/libactuator_lc898217xc_imx398.so
 
 # Camera chromatix
 vendor/lib/libchromatix_imx350_3a_1536x866_30fps_video.so
@@ -389,20 +416,6 @@ vendor/lib/libchromatix_imx398_isp_manual.so
 vendor/lib/libchromatix_imx398_isp_panorama.so
 vendor/lib/libchromatix_imx398_postproc.so
 
-# Camera / DSP - Hexagon libraries
-vendor/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so
-vendor/lib/rfsa/adsp/libdepthmap_skel.so
-vendor/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so
-vendor/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so
-vendor/lib/rfsa/adsp/libthread_blur_skel.so
-
-# Camera etc
-vendor/etc/camera/ashdr/iso617_4608x3456.ncf
-vendor/etc/camera/ashdr/ncf_pack.ncf
-vendor/etc/camera/ashdr/ncf_pack_imx371.ncf
-vendor/etc/camera/ashdr/ncf_pack_imx519.ncf
-vendor/etc/camera/attribute.model
-
 # Camera firmware
 etc/firmware/cpp_firmware_v1_10_0.fw:vendor/firmware/cpp_firmware_v1_10_0.fw
 etc/firmware/cpp_firmware_v1_12_0.fw:vendor/firmware/cpp_firmware_v1_12_0.fw
@@ -440,51 +453,6 @@ vendor/lib/libmms_hal_vstab.so
 vendor/lib/libmms_warper_vstab.so
 vendor/lib/libopcamera_native_modules.so
 
-# Camera sensors
-vendor/lib/libmmcamera_isp_abf48.so
-vendor/lib/libmmcamera_isp_aec_bg_stats47.so
-vendor/lib/libmmcamera_isp_bf_stats47.so
-vendor/lib/libmmcamera_isp_bg_stats46.so
-vendor/lib/libmmcamera_isp_bhist_stats44.so
-vendor/lib/libmmcamera_isp_black_level48.so
-vendor/lib/libmmcamera_isp_bpc48.so
-vendor/lib/libmmcamera_isp_cac47.so
-vendor/lib/libmmcamera_isp_chroma_enhan40.so
-vendor/lib/libmmcamera_isp_chroma_suppress40.so
-vendor/lib/libmmcamera_isp_clamp_encoder40.so
-vendor/lib/libmmcamera_isp_clamp_video40.so
-vendor/lib/libmmcamera_isp_clamp_viewfinder40.so
-vendor/lib/libmmcamera_isp_color_correct46.so
-vendor/lib/libmmcamera_isp_color_xform_encoder46.so
-vendor/lib/libmmcamera_isp_color_xform_video46.so
-vendor/lib/libmmcamera_isp_color_xform_viewfinder46.so
-vendor/lib/libmmcamera_isp_cs_stats46.so
-vendor/lib/libmmcamera_isp_demosaic48.so
-vendor/lib/libmmcamera_isp_demux48.so
-vendor/lib/libmmcamera_isp_fovcrop_encoder46.so
-vendor/lib/libmmcamera_isp_fovcrop_video46.so
-vendor/lib/libmmcamera_isp_fovcrop_viewfinder46.so
-vendor/lib/libmmcamera_isp_gamma44.so
-vendor/lib/libmmcamera_isp_gic48.so
-vendor/lib/libmmcamera_isp_gtm46.so
-vendor/lib/libmmcamera_isp_hdr48.so
-vendor/lib/libmmcamera_isp_hdr_be_stats46.so
-vendor/lib/libmmcamera_isp_hdr_bhist_stats44.so
-vendor/lib/libmmcamera_isp_ihist_stats46.so
-vendor/lib/libmmcamera_isp_linearization40.so
-vendor/lib/libmmcamera_isp_ltm47.so
-vendor/lib/libmmcamera_isp_luma_adaptation40.so
-vendor/lib/libmmcamera_isp_mce40.so
-vendor/lib/libmmcamera_isp_mesh_rolloff44.so
-vendor/lib/libmmcamera_isp_pdaf48.so
-vendor/lib/libmmcamera_isp_pedestal_correct46.so
-vendor/lib/libmmcamera_isp_rs_stats46.so
-vendor/lib/libmmcamera_isp_scaler_encoder46.so
-vendor/lib/libmmcamera_isp_scaler_video46.so
-vendor/lib/libmmcamera_isp_scaler_viewfinder46.so
-vendor/lib/libmmcamera_isp_sce40.so
-vendor/lib/libmmcamera_isp_snr47.so
-vendor/lib/libmmcamera_isp_sub_module.so
 
 # CNE - LA.UM.9.11.r1-02600-NICOBAR.0
 -vendor/app/CACertService/CACertService.apk;PRESIGNED
@@ -681,6 +649,11 @@ vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 # Fingerprint sensor
 lib/hw/fingerprint.msm8998.so:vendor/lib/hw/fingerprint.msm8998.so
 lib64/hw/fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.msm8998.so
+
+# Gatekeeper - from LA.UM.8.2.r1-07400-sdm660.0
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GPS - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/garden_app
@@ -954,11 +927,15 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 
-# Keymaster
+# Keymaster - LA.UM.8.2.r1-07400-sdm660.0
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
 vendor/lib/libqtikeymaster4.so
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
@@ -1324,6 +1301,16 @@ etc/firmware/tp/fw_synaptics_16859.img
 vendor/bin/rmt_storage
 vendor/etc/init/vendor.qti.rmt_storage.rc
 
+# SCVE - LA.UM.9.11.r1-02600-NICOBAR.0
+vendor/lib64/libscveCommon.so
+vendor/lib64/libscveCommon_stub.so
+vendor/lib64/libscveObjectSegmentation.so
+vendor/lib64/libscveObjectSegmentation_stub.so
+vendor/lib64/libscveObjectTracker.so
+vendor/lib64/libscveObjectTracker_stub.so
+vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
+vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
+
 # SMC Invoke - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
@@ -1369,12 +1356,6 @@ vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
-# Snapdragon Computer Vision Engine
-product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
-product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:vendor/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
-vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
-vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
-
 # SS Restart - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/ssr_diag
 vendor/bin/ssr_setup
@@ -1408,10 +1389,6 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so
 # SecureMSM (SECDISP) - LA.UM.8.2.r1-07400-sdm660.0
 vendor/lib64/libSecureUILib.so
 vendor/lib64/libStDrvInt.so
-vendor/lib64/libTouchInputVM.so
-vendor/lib64/libTrustedInput.so
-vendor/lib64/libTrustedInputTZ.so
-vendor/lib64/libTrustedUITZ.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libsi.so

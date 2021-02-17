@@ -138,11 +138,6 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
-# Gatekeeper HAL
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
-
 # GPS
 LOC_HIDL_VERSION = 4.0
 
@@ -173,11 +168,6 @@ PRODUCT_COPY_FILES += \
 TARGET_USES_HARDWARE_KEYS := true
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,${LOCAL_PATH}/configs/keylayout,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
-
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service
 
 # Lights
 PRODUCT_PACKAGES += \
