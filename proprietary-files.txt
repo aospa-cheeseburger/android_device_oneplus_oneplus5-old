@@ -1321,40 +1321,32 @@ vendor/lib64/libminkdescriptor.so
 vendor/lib64/libnative-api.so
 vendor/lib64/libqcbor.so
 
-# Sensors
-lib/libqmi_cci_system.so
-lib/libsdsprpc_system.so
-lib/libsensor1.so
-lib/libsensor_reg_system.so
-lib64/libqmi_cci_system.so
-lib64/libsdsprpc_system.so
-lib64/libsensor1.so
-lib64/libsensor_reg_system.so
-product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
-vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+# Sensors - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/sensors.qti
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
-vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:product/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
-vendor/etc/sensors/hals.conf
-vendor/etc/sensors/sensor_def_qcomdev.conf
-vendor/lib/hw/activity_recognition.msm8998.so
-vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
-vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so
+vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/vendor.sensors.qti.rc
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib/libsensorslog.so
+vendor/lib/libsnsapi.so
+vendor/lib/libsnsdiaglog.so
+vendor/lib/libsns_device_mode_stub.so
+vendor/lib/libsns_fastRPC_util.so
 vendor/lib/libsns_low_lat_stream_stub.so
-vendor/lib/libssc_default_listener.so
-vendor/lib/sensor_calibrate.so
+vendor/lib/libsns_registry_skel.so
+vendor/lib/libssc.so
 vendor/lib/sensors.ssc.so
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
-vendor/lib64/hw/activity_recognition.msm8998.so
-vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
-vendor/lib64/libsensor1.so
-vendor/lib64/libsensor_reg.so
+vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib64/libsensorslog.so
+vendor/lib64/libsnsapi.so
+vendor/lib64/libsnsdiaglog.so
+vendor/lib64/libsns_device_mode_stub.so
+vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/libssc_default_listener.so
-vendor/lib64/sensor_calibrate.so
+vendor/lib64/libsns_registry_skel.so
+vendor/lib64/libssc.so
 vendor/lib64/sensors.ssc.so
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # SS Restart - LA.UM.9.11.r1-02600-NICOBAR.0
 vendor/bin/ssr_diag
