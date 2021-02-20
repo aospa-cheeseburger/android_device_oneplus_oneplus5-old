@@ -133,6 +133,7 @@ ro.control_privapp_permissions=enforce
 ro.vendor.extension_library=libqti-perfd-client.so
 sys.vendor.shutdown.waittime=500
 telephony.lteOnCdmaDevice=1
+ro.ril.ecclist=112,911
 
 # Sensors
 ro.vendor.sensors.dev_ori=true

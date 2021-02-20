@@ -298,6 +298,7 @@ vendor/lib/libseemore.so
 vendor/lib/libstblur_capture_api.so
 vendor/lib/libthread_blur.so
 vendor/lib/libvideoutils.so
+vendor/lib64/vendor.oneplus.camera.CameraHIDL@1.0.so
 vendor/lib64/libDeVIS.so
 vendor/lib64/libEIS.so
 vendor/lib64/libOGLManager.so
