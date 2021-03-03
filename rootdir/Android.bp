@@ -1,4 +1,5 @@
-// Copyright (C) 2020 Paranoid Android
+
+// Copyright (C) 2021 Paranoid Android
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -25,9 +26,17 @@ prebuilt_etc {
     vendor: true,
 }
 
+
 prebuilt_etc {
-    name: "init.oem.rc",
-    src: "etc/init.oem.rc",
+    name: "init.oneplus.rc",
+    src: "etc/init.oneplus.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.qcom.factory.rc",
+    src: "etc/init.qcom.factory.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
@@ -39,6 +48,13 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_hidl_interfaces {
+    name: "hidl_netperftuner_interface",
+    interfaces: [
+        "vendor.qti.hardware.wigig.netperftuner@1.0::INetPerfTuner",
+    ],
+}
+
 sh_binary {
     name: "init.class_main.sh",
     src: "bin/init.class_main.sh",
@@ -46,8 +62,14 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qcom.sh",
-    src: "bin/init.qcom.sh",
+    name: "init.crda.sh",
+    src: "bin/init.crda.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mdm.sh",
+    src: "bin/init.mdm.sh",
     vendor: true,
 }
 
@@ -58,14 +80,38 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.qcom.coex.sh",
+    src: "bin/init.qcom.coex.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "bin/init.qcom.early_boot.sh",
     vendor: true,
 }
 
 sh_binary {
+    name: "init.qcom.efs.sync.sh",
+    src: "bin/init.qcom.efs.sync.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.post_boot.sh",
     src: "bin/init.qcom.post_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.sdio.sh",
+    src: "bin/init.qcom.sdio.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.sh",
+    src: "bin/init.qcom.sh",
     vendor: true,
 }
 

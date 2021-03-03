@@ -172,11 +172,6 @@ service spdaemon /vendor/bin/spdaemon
    user system
    group system
 
-#service qosmgrd /system/bin/qosmgr /system/etc/qosmgr_rules.xml
-#   user system
-#   group system
-#   disabled
-#
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
    user root
@@ -185,20 +180,6 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-recv-passive-client stream 0666 system system
    socket thermal-send-rule stream 0660 system system
    group root
-
-#service security-check1 /sbin/security_boot_check system
-#    class core
-#    oneshot
-#
-#service security-check2 /sbin/security_boot_check recovery
-#    class core
-#    oneshot
-#
-
-#service adsprpcd /system/vendor/bin/adsprpcd
-#   class main
-#   user media
-#   group media
 
 service hbtp /system/vendor/bin/hbtp_daemon
     class main
@@ -210,9 +191,6 @@ service audiod /system/vendor/bin/audiod
    class late_start
    user system
    group system
-
-service vendor.pd_mapper /vendor/bin/pd-mapper
-     class core
 
 on property:vold.decrypt=trigger_restart_framework
    start cnss_diag
