@@ -74,9 +74,6 @@ TARGET_USES_UNCOMPRESSED_KERNEL := false
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/configs/bluetooth/include
-
 # Display
 TARGET_USES_ION := true
 TARGET_USES_NEW_ION_API :=true
