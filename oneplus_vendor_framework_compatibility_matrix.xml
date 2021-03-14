@@ -10,7 +10,7 @@
      limitations under the License.
 -->
 <compatibility-matrix version="1.0" type="framework">
-    <!-- Camera -->
+    <!-- Camera 
     <hal format="hidl">
         <name>vendor.oneplus.camera.CameraHIDL</name>
         <transport>hwbinder</transport>
@@ -19,7 +19,7 @@
             <name>IOnePlusCameraProvider</name>
             <instance>default</instance>
         </interface>
-    </hal>
+    </hal>-->
     <!-- Fingerprint -->
     <hal format="hidl">
         <name>vendor.oneplus.fingerprint.extension</name>

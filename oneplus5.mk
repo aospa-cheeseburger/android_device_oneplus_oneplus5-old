@@ -281,6 +281,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     perf \
     seccomp \
     telephony \
+    usb \
     vibrator \
     wfd-legacy \
     wlan
@@ -335,7 +336,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal \
+    android.hardware.sensors@1.0-impl:64 \
+    android.hardware.sensors@1.0-service \
     libsensorndkbridge
 
 PRODUCT_PROPERTY_OVERRIDES += \
