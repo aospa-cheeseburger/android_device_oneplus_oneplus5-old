@@ -399,7 +399,7 @@ service nqnfcinfo /system/vendor/bin/nqnfcinfo
     user system
     oneshot
 
-service iop /system/vendor/bin/iop
+service vendor.iop /system/vendor/bin/iop
     class main
     user root
     group root
