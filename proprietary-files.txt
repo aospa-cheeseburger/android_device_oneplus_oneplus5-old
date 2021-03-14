@@ -1352,6 +1352,9 @@ vendor/lib64/libthermalioctl.so
 vendor/bin/time_daemon
 -vendor/lib64/libtime_genoff.so
 
+# Wi-Fi
+vendor/bin/cnss-daemon
+
 # Wi-Fi Display
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
