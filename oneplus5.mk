@@ -38,16 +38,23 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@6.0-impl:32 \
+    android.hardware.audio@2.0-service \
+    android.hardware.audio.effect@6.0-impl:32 \
+    android.hardware.soundtrigger@2.2-impl \
+    audio.a2dp.default \
+    audio.bluetooth.default \
+    audio.hearing_aid.default \
     audio.primary.msm8998 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
-    libhdmiedid \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libsndmonitor \
-    libvolumelistener
+    libvolumelistener \
+    tinymix \
+    vendor.qti.hardware.bluetooth_audio@2.0
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -282,9 +289,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     seccomp \
     telephony \
     usb \
-    vibrator \
-    wfd-legacy \
-    wlan
+    vibrator
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -340,10 +345,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.sensors.sync_request=true \
-    persist.vendor.sensors.allow_non_default_discovery=true
-
 # System Helper
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.systemhelper@1.0.vendor
@@ -371,14 +372,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
-    hostapd_cli \
-    libwifi-hal-qcom \
-    wificond \
-    wpa_supplicant \
-    wpa_supplicant.conf \
-    TetheringConfigOverlay \
     WifiOverlay \
-    wifi-mac-generator
+    hostapd_cli \
+    libqsap_sdk \
+    libQWiFiSoftApCfg \
+    libwifi-hal-qcom \
+    wpa_supplicant \
+    wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
@@ -387,3 +387,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg_cta.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg_cta.ini \
     $(LOCAL_PATH)/configs/wifi/wifi_concurrency_cfg.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wifi_concurrency_cfg.txt
+
+# Wifi Display
+PRODUCT_PACKAGES += \
+    libaacwrapper \
+    libmediaextractorservice \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+   WfdCommon
