@@ -53,17 +53,6 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-function blob_fixup() {
-     case "${1}" in
-         vendor/etc/permissions/com.fingerprints.extension.xml )
-             sed -i "s/\/system\/framework\//\/vendor\/framework\//g" "${2}"
-             ;;
-         product/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml )
-             sed -i "s/\/system\/framework\//\/system\/product\/framework\//g" "${2}"
-             ;;
-     esac
- }
-
 # Initialize the helper.
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 

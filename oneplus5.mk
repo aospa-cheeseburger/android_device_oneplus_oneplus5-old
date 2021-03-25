@@ -373,14 +373,13 @@ PRODUCT_PACKAGES += \
     hostapd \
     hostapd_cli \
     libwifi-hal-qcom \
-    vendor.qti.hardware.wifi.supplicant@2.2 \
-    vendor.qti.hardware.wifi.hostapd@1.2 \
-    wcnss_service \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf \
     TetheringConfigOverlay \
-    WifiOverlay
+    WifiOverlay \
+    wifi-mac-generator
+
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
