@@ -86,25 +86,6 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
-# Display/Graphics
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0-impl:64 \
-    android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.mapper@2.0-impl-2.1 \
-    android.hardware.configstore@1.0-service \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    gralloc.msm8998 \
-    hwcomposer.msm8998 \
-    memtrack.msm8998 \
-    libdisplayconfig \
-    libhwc2on1adapter \
-    libtinyxml \
-    libqdMetaData \
-    libqdMetaData.system \
-    libvulkan
-
 PRODUCT_PACKAGES += \
     vendor.display.config@1.9 \
     vendor.qti.hardware.display.allocator@1.0-service
@@ -115,17 +96,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3-service.clearkey \
-    libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor
+    android.hardware.drm@1.3-service.clearkey
 
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
 
 # Encryption
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee \
-    libspl
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -253,9 +231,11 @@ PRODUCT_PACKAGES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
+    adreno-legacy \
     audio \
     av \
     bt \
+    display \
     gps \
     media-legacy \
     nq-nfc \
