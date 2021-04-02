@@ -86,10 +86,6 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
-PRODUCT_PACKAGES += \
-    vendor.display.config@1.9 \
-    vendor.qti.hardware.display.allocator@1.0-service
-
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpmhalservice.enable=1
@@ -119,8 +115,13 @@ PRODUCT_PACKAGES += \
 # GPS
 LOC_HIDL_VERSION = 4.0
 
-PRODUCT_PACKAGES += \
-    libjson
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
+    $(LOCAL_PATH)/configs/gps/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+    $(LOCAL_PATH)/configs/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
+    $(LOCAL_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
+    $(LOCAL_PATH)/configs/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
 # Health
 PRODUCT_PACKAGES += \
@@ -133,10 +134,6 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
-
-# IRQ
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # IRSC
 PRODUCT_COPY_FILES += \
@@ -237,6 +234,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     gps \
+    init \
     media-legacy \
     nq-nfc \
     overlay \
@@ -251,23 +249,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.class_main.sh \
-    init.crda.sh \
-    init.mdm.sh \
     init.oneplus.rc \
-    init.qcom.class_core.sh \
-    init.qcom.coex.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.factory.rc \
-    init.qcom.post_boot.sh \
-    init.qcom.rc \
-    init.qcom.sdio.sh \
-    init.qcom.sh \
-    init.target.rc \
-    init.recovery.qcom.rc \
-    qca6234-service.sh \
-    ueventd.qcom.rc
+    init.target.rc
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
